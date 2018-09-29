@@ -380,9 +380,11 @@ template {
 
 /* Global + reusable **************************************************/
 .container {
-  margin: 0 auto;
-  width: 1300px;
-  width: 100%;
+  max-width: 1300px;
+  margin-top: 120px;
+  margin-left: 200px;
+  margin-right: 30px;
+  padding: 0 200px;
 }
 
 /* Header ************************************************************/
@@ -403,6 +405,20 @@ nav {
   top: 0;
   height: 100vh;
   background: red;
+}
+
+.container {
+  background: blue;
+}
+
+.container .content {
+  background: rgba(255, 255, 0, 0.562);
+  height: 600px;
+}
+
+.container .cont2 {
+  background: rgba(0, 128, 0, 0.589);
+  height: 600px;
 }
 
 /*# sourceMappingURL=style.css.map */
