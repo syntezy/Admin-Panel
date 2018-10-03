@@ -6,16 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.prefixed.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <title>Admin Panel - Dashboard</title>
 </head>
 
 <body>
-    <header class="top-bar"></header>
-    <nav class="side-bar"></nav>
-    <div class="container">
-        <div class="content">sdsd</div>
-        <div class="cont2">sss</div>
-    </div>
+    <header class="top-bar">
+        <ul>
+            <li><a href=""><img src="images/top-bar-1.png" alt=""><span id="value">$1,500.00</span><img src="images/top-bar-arrow.png"
+                        alt=""></a></li>
+            <li><a href="" id="bell"><img src="images/top-bar-2.png" alt=""></a></li>
+            <li><a href=""><img src="images/top-bar-3.png" alt=""><span id="person">John Doe</span></a></li>
+            <li><a href="" id="logout"><img src="images/top-bar-4.png" alt=""></a></li>
+        </ul>
+    </header>
+    <nav class="side-bar">
+        <div class="logo">
+            <div class="brand">
+                <a href=""><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="hamburger-menu">
+                <a href=""><img src="images/hamburger.png" alt=""></a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="" class="active"><img src="images/side-bar-1.png" alt=""><span>General</span></a></li>
+            <li><a href=""><img src="images/side-bar-2.png" alt=""><span>Details</span></a></li>
+            <li><a href=""><img src="images/side-bar-3.png" alt=""><span>Links</span></a></li>
+            <li><a href=""><img src="images/side-bar-4.png" alt=""><span>Banners</span></a></li>
+            <li><a href=""><img src="images/side-bar-5.png" alt=""><span>Personal Data</span></a></li>
+            <li><a href=""><img src="images/side-bar-6.png" alt=""><span>Payout</span></a></li>
+            <li><a href=""><img src="images/side-bar-7.png" alt=""><span>Postback</span></a></li>
+        </ul>
+        <h2>Your manager</h2>
+        <div class="manager">
+            <img src="images/manager.png" alt=""> <span>Chris Browns</span>
+        </div>
+    </nav>
+    <section class="main container">
+        <h1>General Statistic</h1>
+        <div class="calendar">
+            <div class="rectangle">
+                <span id="left">02.10.2018</span>
+                <span id="right">09.10.2018</span>
+                <span><img src="images/calendar.png" alt=""></span>
+            </div>
+            <div class="arrow">
+                <img src="images/circle-arrow.png" alt="">
+            </div>
+        </div>
+        <div class="stats">
+            <div class="column">
+                <div class="text">
+                    <h2>Visit signup</h2>
+                    <span>413</span>
+                </div>
+                <div class="text">
+                    <h2>Net deposit</h2>
+                    <span>882</span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="text">
+                    <h2>FTD</h2>
+                    <span>241</span>
+                </div>
+                <div class="text">
+                    <h2>Turn over</h2>
+                    <span>553</span>
+                </div>
+            </div>
+        </div>
+        <div class="chart">
+            <h2>Earning chart</h2>
+            <div class="chart-img">
+                <img src="images/chart.png" alt="">
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
