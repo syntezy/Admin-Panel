@@ -426,6 +426,7 @@ header.top-bar {
   background: #ffffff;
   width: calc(100vw - 200px);
   z-index: 20;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 header.top-bar ul {
@@ -635,6 +636,11 @@ nav.side-bar .manager span {
   border: 1px solid #e3e3e3;
 }
 
+.main .calendar .rectangle input[type=date] {
+  border: none;
+  outline: none;
+}
+
 .main .calendar .rectangle #right {
   border-left: 1px solid #e3e3e3;
   padding-left: 10px;
@@ -783,8 +789,8 @@ nav.side-bar .manager span {
 .links ul li {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
   border-bottom: 1px solid #e3e3e3;
@@ -800,25 +806,25 @@ nav.side-bar .manager span {
   font-size: 16px;
   font-weight: 700;
   line-height: 17px;
-  margin-right: 300px;
   padding: 20px;
-  min-width: 200px;
 }
 
-.links ul li span a {
+.links ul li a {
   color: #56819f;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 300;
   line-height: 17px;
+  display: block;
+  width: 400px;
+  margin-left: auto;
 }
 
 .links ul li img {
   margin: 0 20px;
-  display: none;
 }
 
 .links ul li #link {
-  margin-left: 100px;
+  margin-left: 40px;
 }
 /*# sourceMappingURL=style.prefixed.css.map */
