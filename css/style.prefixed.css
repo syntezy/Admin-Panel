@@ -414,7 +414,6 @@ a {
   margin-top: 120px;
   margin-left: 240px;
   margin-right: 30px;
-  padding: 0 200px;
 }
 
 /* Header ************************************************************/
@@ -606,9 +605,8 @@ nav.side-bar .manager span {
 }
 
 .main h1 {
-  transform: translateX(-160px);
   display: block;
-  padding: 25px 0 0 0;
+  padding: 20px 15px 10px 15px;
   color: #a6a6a6;
   font-family: Roboto;
   font-size: 16px;
@@ -628,12 +626,6 @@ nav.side-bar .manager span {
   display: inline-block;
   padding: 5px 20px;
   border: 1px solid #e3e3e3;
-  max-width: 350px;
-}
-
-.main .calendar .rectangle span {
-  -ms-flex: 33.3334%;
-      flex: 33.3334%;
 }
 
 .main .calendar .rectangle #right {
@@ -670,8 +662,10 @@ nav.side-bar .manager span {
 .main .stats {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   margin: 40px auto 80px auto;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;

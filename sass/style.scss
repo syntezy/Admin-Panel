@@ -27,7 +27,7 @@ a {
     margin-top: 120px;
     margin-left: 240px;
     margin-right: 30px;
-    padding: 0 200px;
+    // padding: 0 200px;
 }
 
 /* Header ************************************************************/
@@ -204,9 +204,8 @@ nav.side-bar {
     margin-bottom: 35px;
 
     h1 {
-        transform: translateX(-160px);
         display: block;
-        padding: 25px 0 0 0;
+        padding: 20px 15px 10px 15px;
         color: #a6a6a6;
         font-family: Roboto;
         font-size: 16px;
@@ -220,16 +219,11 @@ nav.side-bar {
         border-top: 1px solid #e3e3e3;
         border-bottom: 1px solid #e3e3e3;
         padding: 30px 0;
-
+       
         .rectangle {
             display: inline-block;
             padding: 5px 20px;
             border: 1px solid #e3e3e3;
-            max-width: 350px;
-
-            span {
-                flex: 33.3334%;
-            }
 
             #right {
                 border-left: 1px solid #e3e3e3;
@@ -266,7 +260,8 @@ nav.side-bar {
 
     .stats {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         margin: 40px auto 80px auto;
         flex-wrap: wrap;
 
