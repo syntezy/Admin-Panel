@@ -12,7 +12,8 @@ body {
     background: #f4f4f4;
 }
 
-ul {
+ul,
+ol {
     list-style: none;
     padding-left: 0;
     margin: 0;
@@ -40,6 +41,7 @@ header.top-bar {
     background: #ffffff;
     width: calc(100vw - 200px);
     z-index: 20;
+
     ul {
         display: flex;
         justify-content: flex-end;
@@ -87,6 +89,7 @@ header.top-bar {
                     line-height: 42px;
                 }
             }
+
             #bell {
                 position: relative;
 
@@ -205,7 +208,7 @@ nav.side-bar {
 
     h1 {
         display: block;
-        padding: 20px 15px 10px 15px;
+        padding: 20px 15px 10px 10px;
         color: #a6a6a6;
         font-family: Roboto;
         font-size: 16px;
@@ -219,7 +222,10 @@ nav.side-bar {
         border-top: 1px solid #e3e3e3;
         border-bottom: 1px solid #e3e3e3;
         padding: 30px 0;
-       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         .rectangle {
             display: inline-block;
             padding: 5px 20px;
@@ -262,14 +268,19 @@ nav.side-bar {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 40px auto 80px auto;
+        margin: 40px 0 80px 0;
         flex-wrap: wrap;
+        width: 80%;
+        margin-left: 10%;
 
         .column {
             display: flex;
             flex-direction: column;
-            margin: 0 60px;
             flex: 37%;
+
+            &:first-child {
+                margin-right: 100px;
+            }
 
             .text {
                 display: flex;
@@ -299,12 +310,15 @@ nav.side-bar {
 
     .chart {
         padding-bottom: 60px;
+
         h2 {
             color: #a6a6a6;
             font-family: Roboto;
             font-size: 16px;
             font-weight: 700;
             line-height: 42px;
+            margin-left: 10%;
+            margin-bottom: 40px;
         }
 
         .chart-img {
@@ -312,6 +326,85 @@ nav.side-bar {
                 display: block;
                 margin: 0 auto;
                 object-fit: cover;
+            }
+        }
+    }
+}
+
+/* Section--Links ******************************************************************/
+
+.links {
+    background: #ffffff;
+    box-shadow: 1px 1px 5px #d4d4d4;
+
+    h1 {
+        display: block;
+        padding: 20px 15px 10px 10px;
+        color: #a6a6a6;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 42px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #e3e3e3;
+    }
+
+    .button {
+        text-align: center;
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 42px;
+        padding: 3px 30px;
+        margin: 25px;
+        background: #f58220;
+        display: inline-block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 3px;
+    }
+
+    ul {
+        width: 60%;
+        margin-left: 20%;
+
+        li {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            border-bottom: 1px solid #e3e3e3;
+
+            &:first-child {
+                border-top: 1px solid #e3e3e3;
+            }
+
+            span {
+                color: #a6a6a6;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 17px;
+                margin-right: 300px;
+                padding: 20px;
+                min-width: 200px;
+
+                a {
+                    color: #56819f;
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-weight: 300;
+                    line-height: 17px;
+                }
+            }
+
+            img {
+                margin: 0 20px;
+                display: none;
+            }
+
+            #link {
+                margin-left: 100px;
             }
         }
     }
