@@ -925,10 +925,86 @@ nav.side-bar .manager span {
 }
 
 /* Section--main *****************************************/
+@media (max-width: 1200px) {
+  .main .stats .column {
+    -ms-flex: 75%;
+        flex: 75%;
+  }
+  .main .stats .column:first-child {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 970px) {
   .container {
     margin-top: 80px;
     margin-left: 40px;
+  }
+}
+
+@media (max-width: 630px) {
+  .main .calendar {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .main .calendar .arrow {
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  .main .calendar .rectangle {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex: 100%;
+        flex: 100%;
+  }
+  .main .calendar .rectangle #right {
+    border: none;
+    padding: 0;
+    text-align: center;
+  }
+  .main .calendar .rectangle #left {
+    padding: 0;
+    text-align: center;
+  }
+  .main .calendar .rectangle span img {
+    display: block;
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .main .stats .column .text h2 {
+    margin-right: 150px;
+  }
+}
+
+/* Section--links *****************************************/
+@media (max-width: 1265px) {
+  .links ul li {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .links ul li .link {
+    opacity: 1;
+  }
+  .links ul li a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-align: center;
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=style.prefixed.css.map */
