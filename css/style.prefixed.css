@@ -891,6 +891,7 @@ nav.side-bar .manager span {
 .links ul li a .icons {
   display: inline-block;
   margin-left: auto;
+  text-align: center;
 }
 
 .links ul li img {
@@ -1009,6 +1010,9 @@ nav.side-bar .manager span {
     -ms-flex-align: center;
         align-items: center;
     text-align: center;
+    margin-left: 0;
+  }
+  .links ul li a .icons {
     margin-left: 0;
   }
 }
