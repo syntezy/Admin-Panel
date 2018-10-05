@@ -1,0 +1,35 @@
+/* Header.topbar *****************************************/
+
+@media (max-width: 970px) {
+    header.top-bar {
+        display: none;
+    }
+}
+
+/* Nav.side-bar *****************************************/
+
+@media (max-width: 970px) {
+    nav.side-bar {
+        background: #f4f4f4;
+        z-index: -1;
+        .logo {
+            background: #1b1b1b;
+            z-index: 20;
+        }
+        ul#topbar-to-sidebar {
+            display: block;
+        }
+        .menu-to-hide {
+            transform: translateX(-400px);
+        }
+    }
+}
+
+/* Section--main *****************************************/
+
+@media (max-width: 970px) {
+    .container {
+        margin-top: 80px;
+        margin-left: 40px;
+    }
+}
