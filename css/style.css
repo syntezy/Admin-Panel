@@ -423,15 +423,17 @@ header.top-bar ul {
 }
 
 header.top-bar ul li {
-  padding: 20px 15px;
+  padding: 28px 15px;
   display: flex;
   align-items: center;
   position: relative;
   transition: all 0.3s;
+  height: 80px;
 }
 
 header.top-bar ul li:hover {
   cursor: pointer;
+  background: #f4f4f4;
 }
 
 header.top-bar ul li::before {
@@ -460,7 +462,6 @@ header.top-bar ul li a #value {
   font-family: Roboto;
   font-size: 20px;
   font-weight: 700;
-  line-height: 42px;
 }
 
 header.top-bar ul li a #person {
@@ -468,7 +469,6 @@ header.top-bar ul li a #person {
   font-family: Roboto;
   font-size: 13px;
   font-weight: 300;
-  line-height: 42px;
 }
 
 header.top-bar ul li #bell {
@@ -847,9 +847,10 @@ nav.side-bar .manager span {
 }
 
 .links ul li .link {
-  margin-left: 40px;
+  padding: 10px 10px 10px 40px;
   opacity: 0;
   transition: all 0.3s;
+  margin-left: auto;
 }
 
 /* Header.topbar *****************************************/

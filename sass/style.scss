@@ -48,14 +48,16 @@ header.top-bar {
         align-items: center;
 
         li {
-            padding: 20px 15px;
+            padding: 28px 15px;
             display: flex;
             align-items: center;
             position: relative;
             transition: all 0.3s;
+            height: 80px;
 
             &:hover {
                 cursor: pointer;
+                background: #f4f4f4;
             }
 
             &::before {
@@ -83,7 +85,7 @@ header.top-bar {
                     font-family: Roboto;
                     font-size: 20px;
                     font-weight: 700;
-                    line-height: 42px;
+                    // line-height: 42px;
                 }
 
                 #person {
@@ -91,7 +93,7 @@ header.top-bar {
                     font-family: Roboto;
                     font-size: 13px;
                     font-weight: 300;
-                    line-height: 42px;
+                    // line-height: 42px;
                 }
             }
 
@@ -475,9 +477,11 @@ nav.side-bar {
             }
 
             .link {
-                margin-left: 40px;
+                // margin-left: 40px;
+                padding: 10px 10px 10px 40px;
                 opacity: 0;
                 transition: all 0.3s;
+                margin-left: auto;
             }
         }
     }
