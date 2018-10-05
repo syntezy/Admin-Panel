@@ -470,6 +470,10 @@ nav.side-bar {
                 margin-left: auto;
                 display: flex;
                 align-items: center;
+                .icons {
+                    display: inline-block;
+                    margin-left: auto;
+                }
             }
 
             img {

@@ -842,6 +842,11 @@ nav.side-bar .manager span {
   align-items: center;
 }
 
+.links ul li a .icons {
+  display: inline-block;
+  margin-left: auto;
+}
+
 .links ul li img {
   margin: 0 20px;
 }
