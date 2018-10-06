@@ -1034,6 +1034,110 @@ nav.side-bar .manager span {
   color: #818181;
 }
 
+/* Section--banners ******************************************************************/
+.banners {
+  background: #ffffff;
+  box-shadow: 1px 1px 5px #d4d4d4;
+}
+
+.banners h1 {
+  display: block;
+  padding: 20px 15px 10px 10px;
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.banners .button {
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 42px;
+  padding: 3px 30px;
+  margin: 25px;
+  background: #f58220;
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.banners .button:hover {
+  background: #e7700a;
+  cursor: pointer;
+}
+
+.banners ul {
+  width: 60%;
+  margin-left: 20%;
+}
+
+.banners ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+  transition: all 0.3s;
+}
+
+.banners ul li:first-child {
+  border-top: 1px solid #e3e3e3;
+}
+
+.banners ul li:hover {
+  background: rgba(177, 191, 191, 0.116);
+}
+
+.banners ul li:hover .link {
+  opacity: 1;
+}
+
+.banners ul li span {
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  padding: 20px;
+}
+
+.banners ul li a {
+  color: #56819f;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 17px;
+  display: block;
+  width: 550px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.banners ul li a .icons {
+  display: inline-block;
+  margin-left: auto;
+  text-align: center;
+}
+
+.banners ul li img {
+  margin: 0 20px;
+}
+
+.banners ul li .link {
+  padding: 10px 10px 10px 40px;
+  opacity: 0;
+  transition: all 0.3s;
+  margin-left: auto;
+}
+
 /* Header.topbar *****************************************/
 @media (max-width: 970px) {
   header.top-bar {
@@ -1307,6 +1411,43 @@ nav.side-bar .manager span {
   .details .calendar .rectangle span img {
     display: block;
     margin: 0;
+  }
+}
+
+@media (max-width: 570px) {
+  .details .pagination .numbers {
+    display: flex;
+    flex-direction: column;
+  }
+  .details .pagination svg {
+    margin: 15px;
+  }
+  .details .pagination ul {
+    flex-wrap: wrap;
+  }
+  .details .pagination ul li {
+    margin: 20px 0;
+  }
+}
+
+/* Section--banners *****************************************/
+@media (max-width: 1265px) {
+  .banners ul li {
+    flex-direction: column;
+  }
+  .banners ul li .link {
+    opacity: 1;
+  }
+  .banners ul li a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+  .banners ul li a .icons {
+    margin-left: 0;
   }
 }
 

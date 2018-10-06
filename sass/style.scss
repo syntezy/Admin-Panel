@@ -671,4 +671,111 @@ nav.side-bar {
     }
 }
 
+/* Section--banners ******************************************************************/
+
+.banners {
+    background: #ffffff;
+    box-shadow: 1px 1px 5px #d4d4d4;
+
+    h1 {
+        display: block;
+        padding: 20px 15px 10px 10px;
+        color: #a6a6a6;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 42px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #e3e3e3;
+    }
+
+    .button {
+        text-align: center;
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 42px;
+        padding: 3px 30px;
+        margin: 25px;
+        background: #f58220;
+        display: inline-block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 3px;
+        transition: all 0.3s;
+
+        &:hover {
+            background: darken(#f58220, 7%);
+            cursor: pointer;
+        }
+    }
+
+    ul {
+        width: 60%;
+        margin-left: 20%;
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e3e3e3;
+            transition: all 0.3s;
+
+            &:first-child {
+                border-top: 1px solid #e3e3e3;
+            }
+
+            &:hover {
+                background: rgba(177, 191, 191, 0.116);
+            }
+
+            &:hover .link {
+                opacity: 1;
+            }
+
+            span {
+                color: #a6a6a6;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 17px;
+                // margin-right: 300px;
+                padding: 20px;
+            }
+
+            a {
+                color: #56819f;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 17px;
+                display: block;
+                width: 550px;
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+
+                .icons {
+                    display: inline-block;
+                    margin-left: auto;
+                    text-align: center;
+                }
+            }
+
+            img {
+                margin: 0 20px;
+            }
+
+            .link {
+                // margin-left: 40px;
+                padding: 10px 10px 10px 40px;
+                opacity: 0;
+                transition: all 0.3s;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
 @import 'media';
