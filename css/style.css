@@ -1145,6 +1145,129 @@ nav.side-bar .manager span {
   margin-left: auto;
 }
 
+/* Section--Personal data ************************************************************/
+.personal-data {
+  background: #ffffff;
+  box-shadow: 1px 1px 5px #d4d4d4;
+}
+
+.personal-data h1 {
+  display: block;
+  padding: 20px 15px 10px 10px;
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.personal-data .person,
+.personal-data .contact,
+.personal-data .wallet,
+.personal-data .password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 30px;
+}
+
+.personal-data .person .name,
+.personal-data .person .surname,
+.personal-data .person .email,
+.personal-data .person .phone,
+.personal-data .person .skype,
+.personal-data .person .icq,
+.personal-data .person .msn,
+.personal-data .person .wallet-div,
+.personal-data .person .pass,
+.personal-data .person .repeat,
+.personal-data .contact .name,
+.personal-data .contact .surname,
+.personal-data .contact .email,
+.personal-data .contact .phone,
+.personal-data .contact .skype,
+.personal-data .contact .icq,
+.personal-data .contact .msn,
+.personal-data .contact .wallet-div,
+.personal-data .contact .pass,
+.personal-data .contact .repeat,
+.personal-data .wallet .name,
+.personal-data .wallet .surname,
+.personal-data .wallet .email,
+.personal-data .wallet .phone,
+.personal-data .wallet .skype,
+.personal-data .wallet .icq,
+.personal-data .wallet .msn,
+.personal-data .wallet .wallet-div,
+.personal-data .wallet .pass,
+.personal-data .wallet .repeat,
+.personal-data .password .name,
+.personal-data .password .surname,
+.personal-data .password .email,
+.personal-data .password .phone,
+.personal-data .password .skype,
+.personal-data .password .icq,
+.personal-data .password .msn,
+.personal-data .password .wallet-div,
+.personal-data .password .pass,
+.personal-data .password .repeat {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px auto;
+}
+
+.personal-data .person label,
+.personal-data .contact label,
+.personal-data .wallet label,
+.personal-data .password label {
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  padding: 10px;
+  width: 200px;
+}
+
+.personal-data .person input,
+.personal-data .contact input,
+.personal-data .wallet input,
+.personal-data .password input {
+  color: #333333;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 42px;
+  min-width: 300px;
+  outline-color: #f58220;
+}
+
+.personal-data .button {
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 42px;
+  padding: 3px 30px;
+  margin: 25px;
+  background: #f58220;
+  display: inline-block;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.personal-data .button:hover {
+  background: #e7700a;
+  cursor: pointer;
+}
+
 /* Header.topbar *****************************************/
 @media (max-width: 970px) {
   header.top-bar {

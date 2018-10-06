@@ -614,6 +614,7 @@ nav.side-bar {
                 line-height: 17px;
                 border-bottom: 1px solid #e3e3e3;
                 transition: all 0.3s;
+
                 &:hover {
                     color: #111;
                     cursor: pointer;
@@ -647,6 +648,7 @@ nav.side-bar {
             height: 25px;
             margin: 0 15px;
             transition: all 0.3s;
+
             &:hover {
                 cursor: pointer;
                 fill: #f58220;
@@ -664,10 +666,12 @@ nav.side-bar {
                 color: #56819f;
                 font-family: Roboto;
                 transition: all 0.3s;
+
                 &:hover {
                     background: #f4f4f4;
                 }
             }
+
             li a.activePage {
                 background: #f4f4f4;
                 border-radius: 3px;
@@ -780,6 +784,93 @@ nav.side-bar {
                 transition: all 0.3s;
                 margin-left: auto;
             }
+        }
+    }
+}
+
+/* Section--Personal data ************************************************************/
+
+.personal-data {
+    background: #ffffff;
+    box-shadow: 1px 1px 5px #d4d4d4;
+
+    h1 {
+        display: block;
+        padding: 20px 15px 10px 10px;
+        color: #a6a6a6;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 42px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #e3e3e3;
+    }
+
+    .person,
+    .contact,
+    .wallet,
+    .password {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 1px solid #e3e3e3;
+        padding: 30px;
+
+        .name,
+        .surname,
+        .email,
+        .phone,
+        .skype,
+        .icq,
+        .msn,
+        .wallet-div,
+        .pass,
+        .repeat {
+            display: flex;
+            justify-content: space-between;
+            margin: 15px auto;
+        }
+
+        label {
+            color: #a6a6a6;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 17px;
+            padding: 10px;
+            width: 200px;
+        }
+
+        input {
+            color: #333333;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 42px;
+            min-width: 300px;
+            outline-color: #f58220;
+        }
+    }
+    .button {
+        text-align: center;
+        color: #ffffff;
+        font-family: Roboto;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 42px;
+        padding: 3px 30px;
+        margin: 25px;
+        background: #f58220;
+        display: inline-block;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 3px;
+        transition: all 0.3s;
+
+        &:hover {
+            background: darken(#f58220, 7%);
+            cursor: pointer;
         }
     }
 }
