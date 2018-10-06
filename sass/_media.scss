@@ -10,12 +10,12 @@
 
 @media (max-width: 970px) {
     nav.side-bar {
-        background: #f4f4f4;
-        z-index: -1;
+        background: transparent;
 
         .logo {
             background: #1b1b1b;
             z-index: 20;
+            width: 100vw;
         }
 
         ul#topbar-to-sidebar {

@@ -30,6 +30,21 @@ a {
     // padding: 0 200px;
 }
 
+/* JS toggle switch classes ***************************/
+
+.logoToggle {
+    width: 200px;
+}
+
+.hiddenMenuToggle {
+    transform: translateX(0);
+    background: #1b1b1b;
+}
+
+.containerToggle {
+    margin-left: 240px;
+}
+
 /* Header ************************************************************/
 
 header.top-bar {
@@ -176,6 +191,7 @@ nav.side-bar {
 
         svg.active {
             fill: #ffffff;
+            margin-left: 25px;
         }
 
         &:hover {
@@ -284,21 +300,20 @@ nav.side-bar {
 
             #right {
                 border-left: 1px solid #e3e3e3;
-                padding-left: 10px;
+                // padding-left: 10px;
                 color: #333333;
                 font-family: Roboto;
                 font-size: 14px;
                 font-weight: 300;
-                line-height: 42px;
+                padding: 10px;
             }
 
             #left {
-                padding-right: 50px;
+                padding: 10px 50px 10px 10px;
                 color: #333333;
                 font-family: Roboto;
                 font-size: 14px;
                 font-weight: 300;
-                line-height: 42px;
             }
 
             img {
