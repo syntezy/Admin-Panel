@@ -52,26 +52,31 @@
 @media (max-width: 630px) {
     .main .calendar {
         flex-direction: column;
+
         .arrow {
             width: 100%;
             margin-top: 15px;
             margin-left: 0;
         }
+
         .rectangle {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             flex: 100%;
+
             #right {
                 border: none;
                 padding: 0;
                 text-align: center;
             }
+
             #left {
                 padding: 0;
                 text-align: center;
             }
+
             span img {
                 display: block;
                 margin: 0;
@@ -108,6 +113,7 @@
                 align-items: center;
                 text-align: center;
                 margin-left: 0;
+
                 .icons {
                     margin-left: 0;
                 }
@@ -116,3 +122,123 @@
     }
 }
 
+/* Section--details *****************************************/
+
+@media (max-width: 1240px) {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
+        display: block;
+    }
+
+    .details table {
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        tr {
+            border-bottom: 3px solid #e9e9e9;
+            td {
+                border-bottom: 1px solid #e3e3e3;
+                text-align: left;
+            }
+        }
+    }
+
+    td:nth-of-type(1):before {
+        content: "Tracker name";
+        @include th--styles;
+    }
+
+    td:nth-of-type(2):before {
+        content: "Initialed date";
+        @include th--styles;
+    }
+
+    td:nth-of-type(3):before {
+        content: "Visits";
+        @include th--styles;
+    }
+
+    td:nth-of-type(4):before {
+        content: "Uniqies";
+        @include th--styles;
+    }
+
+    td:nth-of-type(5):before {
+        content: "Signups";
+        @include th--styles;
+    }
+
+    td:nth-of-type(6):before {
+        content: "FTD";
+        @include th--styles;
+    }
+
+    td:nth-of-type(7):before {
+        content: "Depositors";
+        @include th--styles;
+    }
+
+    td:nth-of-type(8):before {
+        content: "Deposits ($)";
+        @include th--styles;
+    }
+
+    td:nth-of-type(9):before {
+        content: "Payout ($)";
+        @include th--styles;
+    }
+
+    td:nth-of-type(10):before {
+        content: "Turnover";
+        @include th--styles;
+    }
+
+    td:nth-of-type(11):before {
+        content: "Deal";
+        @include th--styles;
+    }
+}
+
+@media (max-width: 630px) {
+    .details .calendar {
+        flex-direction: column;
+
+        .arrow {
+            width: 100%;
+            margin-top: 15px;
+            margin-left: 0;
+        }
+
+        .rectangle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex: 100%;
+
+            #right {
+                border: none;
+                padding: 0;
+                text-align: center;
+            }
+
+            #left {
+                padding: 0;
+                text-align: center;
+            }
+
+            span img {
+                display: block;
+                margin: 0;
+            }
+        }
+    }
+}

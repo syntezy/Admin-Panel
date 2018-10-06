@@ -328,6 +328,7 @@ nav.side-bar {
             border-radius: 3px;
             margin-left: 10px;
             transition: all 0.3s;
+
             &:hover {
                 background: darken(#f58220, 7%);
                 cursor: pointer;
@@ -435,6 +436,7 @@ nav.side-bar {
         transform: translateX(-50%);
         border-radius: 3px;
         transition: all 0.3s;
+
         &:hover {
             background: darken(#f58220, 7%);
             cursor: pointer;
@@ -485,6 +487,7 @@ nav.side-bar {
                 margin-left: auto;
                 display: flex;
                 align-items: center;
+
                 .icons {
                     display: inline-block;
                     margin-left: auto;
@@ -502,6 +505,167 @@ nav.side-bar {
                 opacity: 0;
                 transition: all 0.3s;
                 margin-left: auto;
+            }
+        }
+    }
+}
+
+/* Section--details ************************************************************/
+
+.details {
+    background: #ffffff;
+    box-shadow: 1px 1px 5px #d4d4d4;
+
+    h1 {
+        display: block;
+        padding: 20px 15px 10px 10px;
+        color: #a6a6a6;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 42px;
+        text-transform: uppercase;
+    }
+
+    .calendar {
+        text-align: center;
+        border-top: 1px solid #e3e3e3;
+        border-bottom: 1px solid #e3e3e3;
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .rectangle {
+            display: inline-block;
+            padding: 5px 20px;
+            border: 1px solid #e3e3e3;
+
+            input[type=date] {
+                border: none;
+                outline: none;
+            }
+
+            #right {
+                border-left: 1px solid #e3e3e3;
+                // padding-left: 10px;
+                color: #333333;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 300;
+                padding: 10px;
+            }
+
+            #left {
+                padding: 10px 50px 10px 10px;
+                color: #333333;
+                font-family: Roboto;
+                font-size: 14px;
+                font-weight: 300;
+            }
+
+            img {
+                margin-left: 33px;
+            }
+        }
+
+        .arrow {
+            background: #f58220;
+            display: inline-block;
+            padding: 16px 17px;
+            border-radius: 3px;
+            margin-left: 10px;
+            transition: all 0.3s;
+
+            &:hover {
+                background: darken(#f58220, 7%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    table {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-collapse: collapse;
+
+        tr {
+            border-left: 3px solid #f4f4f4;
+            border-right: 3px solid #f4f4f4;
+            transition: all 0.3s;
+
+            &:nth-last-of-type(odd) {
+                background: #f8f8f8;
+            }
+
+            &:hover {
+                background: #f1f1f1;
+                border-left: 3px solid #f58320;
+            }
+
+            th {
+                padding: 40px 15px 40px 15px;
+                color: #a6a6a6;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 17px;
+                border-bottom: 1px solid #e3e3e3;
+            }
+
+            td {
+                text-align: center;
+                color: #333333;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 42px;
+                border-bottom: 1px solid #e3e3e3;
+            }
+        }
+    }
+
+    .pagination {
+        margin: 40px 0;
+
+        .numbers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0 55px 0;
+        }
+
+        svg {
+            width: 25px;
+            height: 25px;
+            margin: 0 15px;
+            transition: all 0.3s;
+            &:hover {
+                cursor: pointer;
+                fill: #f58220;
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li a {
+                padding: 12px 15px;
+                font-size: 18px;
+                color: #56819f;
+                font-family: Roboto;
+                transition: all 0.3s;
+                &:hover {
+                    background: #f4f4f4;
+                }
+            }
+            li a.activePage {
+                background: #f4f4f4;
+                border-radius: 3px;
+                color: #818181;
             }
         }
     }
