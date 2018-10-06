@@ -250,11 +250,14 @@
             display: flex;
             flex-direction: column;
         }
+
         svg {
             margin: 15px;
         }
+
         ul {
             flex-wrap: wrap;
+
             li {
                 margin: 20px 0;
             }
@@ -284,6 +287,38 @@
                 .icons {
                     margin-left: 0;
                 }
+            }
+        }
+    }
+}
+
+/* Section--personal-data *****************************************/
+
+@media (max-width: 700px) {
+    .personal-data {
+        .person,
+        .contact,
+        .wallet,
+        .password {
+            input {
+                width: 150px;
+            }
+            label {
+                width: 100%;
+                text-align: center;
+            }
+            .name,
+            .surname,
+            .email,
+            .phone,
+            .skype,
+            .icq,
+            .msn,
+            .wallet-div,
+            .pass,
+            .repeat {
+                flex-direction: column;
+                text-align: justify;
             }
         }
     }

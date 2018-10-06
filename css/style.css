@@ -1216,7 +1216,7 @@ nav.side-bar .manager span {
 .personal-data .password .pass,
 .personal-data .password .repeat {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin: 15px auto;
 }
 
@@ -1578,6 +1578,66 @@ nav.side-bar .manager span {
   }
   .banners ul li a .icons {
     margin-left: 0;
+  }
+}
+
+/* Section--personal-data *****************************************/
+@media (max-width: 700px) {
+  .personal-data .person input,
+  .personal-data .contact input,
+  .personal-data .wallet input,
+  .personal-data .password input {
+    width: 150px;
+  }
+  .personal-data .person label,
+  .personal-data .contact label,
+  .personal-data .wallet label,
+  .personal-data .password label {
+    width: 100%;
+    text-align: center;
+  }
+  .personal-data .person .name,
+  .personal-data .person .surname,
+  .personal-data .person .email,
+  .personal-data .person .phone,
+  .personal-data .person .skype,
+  .personal-data .person .icq,
+  .personal-data .person .msn,
+  .personal-data .person .wallet-div,
+  .personal-data .person .pass,
+  .personal-data .person .repeat,
+  .personal-data .contact .name,
+  .personal-data .contact .surname,
+  .personal-data .contact .email,
+  .personal-data .contact .phone,
+  .personal-data .contact .skype,
+  .personal-data .contact .icq,
+  .personal-data .contact .msn,
+  .personal-data .contact .wallet-div,
+  .personal-data .contact .pass,
+  .personal-data .contact .repeat,
+  .personal-data .wallet .name,
+  .personal-data .wallet .surname,
+  .personal-data .wallet .email,
+  .personal-data .wallet .phone,
+  .personal-data .wallet .skype,
+  .personal-data .wallet .icq,
+  .personal-data .wallet .msn,
+  .personal-data .wallet .wallet-div,
+  .personal-data .wallet .pass,
+  .personal-data .wallet .repeat,
+  .personal-data .password .name,
+  .personal-data .password .surname,
+  .personal-data .password .email,
+  .personal-data .password .phone,
+  .personal-data .password .skype,
+  .personal-data .password .icq,
+  .personal-data .password .msn,
+  .personal-data .password .wallet-div,
+  .personal-data .password .pass,
+  .personal-data .password .repeat {
+    flex-direction: column;
+    text-align: justify;
   }
 }
 
