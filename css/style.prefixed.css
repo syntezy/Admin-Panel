@@ -1009,13 +1009,14 @@ nav.side-bar .manager span {
   transition: all 0.3s;
 }
 
-.details table tr:nth-last-of-type(odd) {
+.details table tr:nth-last-of-type(even) {
   background: #f8f8f8;
 }
 
 .details table tr:hover {
   background: #f1f1f1;
   border-left: 3px solid #f58320;
+  cursor: pointer;
 }
 
 .details table tr th {
@@ -1026,6 +1027,12 @@ nav.side-bar .manager span {
   font-weight: 700;
   line-height: 17px;
   border-bottom: 1px solid #e3e3e3;
+  transition: all 0.3s;
+}
+
+.details table tr th:hover {
+  color: #111;
+  cursor: pointer;
 }
 
 .details table tr td {
@@ -1514,7 +1521,7 @@ nav.side-bar .manager span {
 }
 
 /* Section--banners *****************************************/
-@media (max-width: 1265px) {
+@media (max-width: 1520px) {
   .banners ul li {
     -ms-flex-direction: column;
         flex-direction: column;

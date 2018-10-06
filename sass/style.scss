@@ -595,13 +595,14 @@ nav.side-bar {
             border-right: 3px solid #f4f4f4;
             transition: all 0.3s;
 
-            &:nth-last-of-type(odd) {
+            &:nth-last-of-type(even) {
                 background: #f8f8f8;
             }
 
             &:hover {
                 background: #f1f1f1;
                 border-left: 3px solid #f58320;
+                cursor: pointer;
             }
 
             th {
@@ -612,6 +613,11 @@ nav.side-bar {
                 font-weight: 700;
                 line-height: 17px;
                 border-bottom: 1px solid #e3e3e3;
+                transition: all 0.3s;
+                &:hover {
+                    color: #111;
+                    cursor: pointer;
+                }
             }
 
             td {
