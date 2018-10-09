@@ -510,9 +510,10 @@ nav.side-bar {
     }
 }
 
-/* Section--details ************************************************************/
+/* Section--details + Section--Payout ************************************************************/
 
-.details {
+.details,
+.payout {
     background: #ffffff;
     box-shadow: 1px 1px 5px #d4d4d4;
 
@@ -852,6 +853,7 @@ nav.side-bar {
             outline-color: #f58220;
         }
     }
+
     .button {
         text-align: center;
         color: #ffffff;
@@ -871,6 +873,99 @@ nav.side-bar {
         &:hover {
             background: darken(#f58220, 7%);
             cursor: pointer;
+        }
+    }
+}
+
+/* Section--Postback **************************************************/
+
+.postback {
+    background: #ffffff;
+    box-shadow: 1px 1px 5px #d4d4d4;
+
+    h1 {
+        display: block;
+        padding: 20px 15px 10px 10px;
+        color: #a6a6a6;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 42px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #e3e3e3;
+    }
+
+    p {
+        padding: 20px 15px 10px 10px;
+        color: #333333;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 42px;
+    }
+
+    .box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        .box-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-basis: 50%;
+            margin-left: 10px;
+
+            h2 {
+                color: #808080;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 42px;
+                text-transform: uppercase;
+                letter-spacing: -0.28px;
+            }
+
+            textarea {
+                resize: none;
+                width: 98%;
+                height: 200px;
+                color: #808080;
+                font-family: Roboto;
+                padding: 10px;
+            }
+        }
+
+    }
+
+    .select-inputs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .box-item {
+            flex-basis: 33.33334%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+
+            h2 {
+                color: #808080;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 42px;
+                text-transform: uppercase;
+                letter-spacing: -0.28px;
+                padding: 20px 15px 10px 10px;
+            }
+
+            select {
+                margin-left: 10px;
+                padding: 12px 10px;
+                width: 90%;
+            }
         }
     }
 }

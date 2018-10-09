@@ -918,13 +918,15 @@ nav.side-bar .manager span {
   margin-left: auto;
 }
 
-/* Section--details ************************************************************/
-.details {
+/* Section--details + Section--Payout ************************************************************/
+.details,
+.payout {
   background: #ffffff;
   box-shadow: 1px 1px 5px #d4d4d4;
 }
 
-.details h1 {
+.details h1,
+.payout h1 {
   display: block;
   padding: 20px 15px 10px 10px;
   color: #a6a6a6;
@@ -935,7 +937,8 @@ nav.side-bar .manager span {
   text-transform: uppercase;
 }
 
-.details .calendar {
+.details .calendar,
+.payout .calendar {
   text-align: center;
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
@@ -948,18 +951,21 @@ nav.side-bar .manager span {
       align-items: center;
 }
 
-.details .calendar .rectangle {
+.details .calendar .rectangle,
+.payout .calendar .rectangle {
   display: inline-block;
   padding: 5px 20px;
   border: 1px solid #e3e3e3;
 }
 
-.details .calendar .rectangle input[type=date] {
+.details .calendar .rectangle input[type=date],
+.payout .calendar .rectangle input[type=date] {
   border: none;
   outline: none;
 }
 
-.details .calendar .rectangle #right {
+.details .calendar .rectangle #right,
+.payout .calendar .rectangle #right {
   border-left: 1px solid #e3e3e3;
   color: #333333;
   font-family: Roboto;
@@ -968,7 +974,8 @@ nav.side-bar .manager span {
   padding: 10px;
 }
 
-.details .calendar .rectangle #left {
+.details .calendar .rectangle #left,
+.payout .calendar .rectangle #left {
   padding: 10px 50px 10px 10px;
   color: #333333;
   font-family: Roboto;
@@ -976,11 +983,13 @@ nav.side-bar .manager span {
   font-weight: 300;
 }
 
-.details .calendar .rectangle img {
+.details .calendar .rectangle img,
+.payout .calendar .rectangle img {
   margin-left: 33px;
 }
 
-.details .calendar .arrow {
+.details .calendar .arrow,
+.payout .calendar .arrow {
   background: #f58220;
   display: inline-block;
   padding: 16px 17px;
@@ -989,12 +998,14 @@ nav.side-bar .manager span {
   transition: all 0.3s;
 }
 
-.details .calendar .arrow:hover {
+.details .calendar .arrow:hover,
+.payout .calendar .arrow:hover {
   background: #e7700a;
   cursor: pointer;
 }
 
-.details table {
+.details table,
+.payout table {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
@@ -1003,23 +1014,27 @@ nav.side-bar .manager span {
   border-collapse: collapse;
 }
 
-.details table tr {
+.details table tr,
+.payout table tr {
   border-left: 3px solid #f4f4f4;
   border-right: 3px solid #f4f4f4;
   transition: all 0.3s;
 }
 
-.details table tr:nth-last-of-type(even) {
+.details table tr:nth-last-of-type(even),
+.payout table tr:nth-last-of-type(even) {
   background: #f8f8f8;
 }
 
-.details table tr:hover {
+.details table tr:hover,
+.payout table tr:hover {
   background: #f1f1f1;
   border-left: 3px solid #f58320;
   cursor: pointer;
 }
 
-.details table tr th {
+.details table tr th,
+.payout table tr th {
   padding: 40px 15px 40px 15px;
   color: #a6a6a6;
   font-family: Roboto;
@@ -1030,12 +1045,14 @@ nav.side-bar .manager span {
   transition: all 0.3s;
 }
 
-.details table tr th:hover {
+.details table tr th:hover,
+.payout table tr th:hover {
   color: #111;
   cursor: pointer;
 }
 
-.details table tr td {
+.details table tr td,
+.payout table tr td {
   text-align: center;
   color: #333333;
   font-family: Roboto;
@@ -1045,11 +1062,13 @@ nav.side-bar .manager span {
   border-bottom: 1px solid #e3e3e3;
 }
 
-.details .pagination {
+.details .pagination,
+.payout .pagination {
   margin: 40px 0;
 }
 
-.details .pagination .numbers {
+.details .pagination .numbers,
+.payout .pagination .numbers {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1059,19 +1078,22 @@ nav.side-bar .manager span {
   padding: 20px 0 55px 0;
 }
 
-.details .pagination svg {
+.details .pagination svg,
+.payout .pagination svg {
   width: 25px;
   height: 25px;
   margin: 0 15px;
   transition: all 0.3s;
 }
 
-.details .pagination svg:hover {
+.details .pagination svg:hover,
+.payout .pagination svg:hover {
   cursor: pointer;
   fill: #f58220;
 }
 
-.details .pagination ul {
+.details .pagination ul,
+.payout .pagination ul {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1080,7 +1102,8 @@ nav.side-bar .manager span {
       align-items: center;
 }
 
-.details .pagination ul li a {
+.details .pagination ul li a,
+.payout .pagination ul li a {
   padding: 12px 15px;
   font-size: 18px;
   color: #56819f;
@@ -1088,11 +1111,13 @@ nav.side-bar .manager span {
   transition: all 0.3s;
 }
 
-.details .pagination ul li a:hover {
+.details .pagination ul li a:hover,
+.payout .pagination ul li a:hover {
   background: #f4f4f4;
 }
 
-.details .pagination ul li a.activePage {
+.details .pagination ul li a.activePage,
+.payout .pagination ul li a.activePage {
   background: #f4f4f4;
   border-radius: 3px;
   color: #818181;
@@ -1336,6 +1361,113 @@ nav.side-bar .manager span {
   cursor: pointer;
 }
 
+/* Section--Postback **************************************************/
+.postback {
+  background: #ffffff;
+  box-shadow: 1px 1px 5px #d4d4d4;
+}
+
+.postback h1 {
+  display: block;
+  padding: 20px 15px 10px 10px;
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.postback p {
+  padding: 20px 15px 10px 10px;
+  color: #333333;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 42px;
+}
+
+.postback .box {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.postback .box .box-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-left: 10px;
+}
+
+.postback .box .box-item h2 {
+  color: #808080;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  letter-spacing: -0.28px;
+}
+
+.postback .box .box-item textarea {
+  resize: none;
+  width: 98%;
+  height: 200px;
+  color: #808080;
+  font-family: Roboto;
+  padding: 10px;
+}
+
+.postback .select-inputs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.postback .select-inputs .box-item {
+  -ms-flex-preferred-size: 33.33334%;
+      flex-basis: 33.33334%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+.postback .select-inputs .box-item h2 {
+  color: #808080;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  letter-spacing: -0.28px;
+  padding: 20px 15px 10px 10px;
+}
+
+.postback .select-inputs .box-item select {
+  margin-left: 10px;
+  padding: 12px 10px;
+  width: 90%;
+}
+
 /* Header.topbar *****************************************/
 @media (max-width: 970px) {
   header.top-bar {
@@ -1458,15 +1590,15 @@ nav.side-bar .manager span {
   tr {
     display: block;
   }
-  .details table thead tr {
+  .details table thead tr, .payout table thead tr {
     position: absolute;
     top: -9999px;
     left: -9999px;
   }
-  .details table tr {
+  .details table tr, .payout table tr {
     border-bottom: 3px solid #e9e9e9;
   }
-  .details table tr td {
+  .details table tr td, .payout table tr td {
     border-bottom: 1px solid #e3e3e3;
     text-align: left;
   }
@@ -1594,16 +1726,16 @@ nav.side-bar .manager span {
 }
 
 @media (max-width: 630px) {
-  .details .calendar {
+  .details .calendar, .payout .calendar {
     -ms-flex-direction: column;
         flex-direction: column;
   }
-  .details .calendar .arrow {
+  .details .calendar .arrow, .payout .calendar .arrow {
     width: 100%;
     margin-top: 15px;
     margin-left: 0;
   }
-  .details .calendar .rectangle {
+  .details .calendar .rectangle, .payout .calendar .rectangle {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
@@ -1615,36 +1747,36 @@ nav.side-bar .manager span {
     -ms-flex: 100%;
         flex: 100%;
   }
-  .details .calendar .rectangle #right {
+  .details .calendar .rectangle #right, .payout .calendar .rectangle #right {
     border: none;
     padding: 0;
     text-align: center;
   }
-  .details .calendar .rectangle #left {
+  .details .calendar .rectangle #left, .payout .calendar .rectangle #left {
     padding: 0;
     text-align: center;
   }
-  .details .calendar .rectangle span img {
+  .details .calendar .rectangle span img, .payout .calendar .rectangle span img {
     display: block;
     margin: 0;
   }
 }
 
 @media (max-width: 570px) {
-  .details .pagination .numbers {
+  .details .pagination .numbers, .payout .pagination .numbers {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
   }
-  .details .pagination svg {
+  .details .pagination svg, .payout .pagination svg {
     margin: 15px;
   }
-  .details .pagination ul {
+  .details .pagination ul, .payout .pagination ul {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .details .pagination ul li {
+  .details .pagination ul li, .payout .pagination ul li {
     margin: 20px 0;
   }
 }
@@ -1733,6 +1865,54 @@ nav.side-bar .manager span {
     -ms-flex-direction: column;
         flex-direction: column;
     text-align: justify;
+  }
+}
+
+/* Section--Payout ***********************************************/
+@media (max-width: 1240px) {
+  .payout table tr td:nth-of-type(1):before {
+    content: "Date";
+    color: #a6a6a6;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    display: inline-block;
+    width: 50%;
+    margin-left: 20px;
+  }
+  .payout table tr td:nth-of-type(2):before {
+    content: "Amount ($)";
+    color: #a6a6a6;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    display: inline-block;
+    width: 50%;
+    margin-left: 20px;
+  }
+  .payout table tr td:nth-of-type(3):before {
+    content: "Deal";
+    color: #a6a6a6;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    display: inline-block;
+    width: 50%;
+    margin-left: 20px;
+  }
+  .payout table tr td:nth-of-type(4):before {
+    content: "Account";
+    color: #a6a6a6;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+    display: inline-block;
+    width: 50%;
+    margin-left: 20px;
   }
 }
 /*# sourceMappingURL=style.prefixed.css.map */

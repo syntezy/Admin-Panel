@@ -135,7 +135,7 @@
         display: block;
     }
 
-    .details table {
+    .details table, .payout table {
         thead tr {
             position: absolute;
             top: -9999px;
@@ -209,7 +209,7 @@
 }
 
 @media (max-width: 630px) {
-    .details .calendar {
+    .details .calendar , .payout .calendar{
         flex-direction: column;
 
         .arrow {
@@ -245,7 +245,7 @@
 }
 
 @media (max-width: 570px) {
-    .details .pagination {
+    .details .pagination, .payout .pagination {
         .numbers {
             display: flex;
             flex-direction: column;
@@ -320,6 +320,32 @@
                 flex-direction: column;
                 text-align: justify;
             }
+        }
+    }
+}
+
+/* Section--Payout ***********************************************/
+
+@media (max-width: 1240px) {
+    .payout table tr {
+        td:nth-of-type(1):before {
+            content: "Date";
+            @include th--styles;
+        }
+    
+        td:nth-of-type(2):before {
+            content: "Amount ($)";
+            @include th--styles;
+        }
+    
+        td:nth-of-type(3):before {
+            content: "Deal";
+            @include th--styles;
+        }
+    
+        td:nth-of-type(4):before {
+            content: "Account";
+            @include th--styles;
         }
     }
 }
