@@ -30,20 +30,6 @@ a {
     // padding: 0 200px;
 }
 
-/* JS toggle switch classes ***************************/
-
-.logoToggle {
-    width: 200px;
-}
-
-.hiddenMenuToggle {
-    transform: translateX(0);
-    background: #1b1b1b;
-}
-
-.containerToggle {
-    margin-left: 240px;
-}
 
 /* Header ************************************************************/
 
@@ -851,6 +837,7 @@ nav.side-bar {
             line-height: 42px;
             min-width: 300px;
             outline-color: #f58220;
+            padding-left: 10px;
         }
     }
 
@@ -943,7 +930,6 @@ nav.side-bar {
         display: flex;
         justify-content: center;
         align-items: center;
-
         .box-item {
             flex-basis: 33.33334%;
             display: flex;
@@ -965,34 +951,8 @@ nav.side-bar {
             select {
                 margin-left: 10px;
                 padding: 12px 10px;
-                width: 95%;
+                width: 90%;
             }
-        }
-    }
-
-    .info {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .statuses {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            flex-basis: 50%;
-            padding-left: 10px;
-            border: 1px solid #e3e3e3;
-        }
-
-        .send-after {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            flex-basis: 50%;
-            padding-left: 10px;
-            border: 1px solid #e3e3e3;
         }
     }
 }

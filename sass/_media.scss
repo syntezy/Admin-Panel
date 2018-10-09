@@ -16,6 +16,7 @@
             background: #1b1b1b;
             z-index: 20;
             width: 100vw;
+            transition: all 0.3s;
         }
 
         ul#topbar-to-sidebar {
@@ -24,8 +25,27 @@
 
         .menu-to-hide {
             transform: translateX(-200px);
+            transition: all 0.3s;
+            background: #1b1b1b;
+            height: 100vh;
         }
     }
+
+    nav.side-bar.toggle {
+      .logo {
+        width: 200px;
+      }
+
+      .menu-to-hide {
+        transform: none;
+      }
+    }
+
+    .container {
+        margin-top: 80px;
+        margin-left: 40px;
+    }
+
 }
 
 /* Section--main *****************************************/
@@ -42,12 +62,6 @@
     }
 }
 
-@media (max-width: 970px) {
-    .container {
-        margin-top: 80px;
-        margin-left: 40px;
-    }
-}
 
 @media (max-width: 630px) {
     .main .calendar {
@@ -332,17 +346,17 @@
             content: "Date";
             @include th--styles;
         }
-    
+
         td:nth-of-type(2):before {
             content: "Amount ($)";
             @include th--styles;
         }
-    
+
         td:nth-of-type(3):before {
             content: "Deal";
             @include th--styles;
         }
-    
+
         td:nth-of-type(4):before {
             content: "Account";
             @include th--styles;

@@ -404,20 +404,6 @@ a {
   margin-right: 30px;
 }
 
-/* JS toggle switch classes ***************************/
-.logoToggle {
-  width: 200px;
-}
-
-.hiddenMenuToggle {
-  transform: translateX(0);
-  background: #1b1b1b;
-}
-
-.containerToggle {
-  margin-left: 240px;
-}
-
 /* Header ************************************************************/
 header.top-bar {
   position: fixed;
@@ -1269,6 +1255,7 @@ nav.side-bar .manager span {
   line-height: 42px;
   min-width: 300px;
   outline-color: #f58220;
+  padding-left: 10px;
 }
 
 .personal-data .button {
@@ -1382,33 +1369,7 @@ nav.side-bar .manager span {
 .postback .select-inputs .box-item select {
   margin-left: 10px;
   padding: 12px 10px;
-  width: 95%;
-}
-
-.postback .info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.postback .info .statuses {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  flex-basis: 50%;
-  padding-left: 10px;
-  border: 1px solid #e3e3e3;
-}
-
-.postback .info .send-after {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  flex-basis: 50%;
-  padding-left: 10px;
-  border: 1px solid #e3e3e3;
+  width: 90%;
 }
 
 /* Header.topbar *****************************************/
@@ -1427,12 +1388,26 @@ nav.side-bar .manager span {
     background: #1b1b1b;
     z-index: 20;
     width: 100vw;
+    transition: all 0.3s;
   }
   nav.side-bar ul#topbar-to-sidebar {
     display: block;
   }
   nav.side-bar .menu-to-hide {
     transform: translateX(-200px);
+    transition: all 0.3s;
+    background: #1b1b1b;
+    height: 100vh;
+  }
+  nav.side-bar.toggle .logo {
+    width: 200px;
+  }
+  nav.side-bar.toggle .menu-to-hide {
+    transform: none;
+  }
+  .container {
+    margin-top: 80px;
+    margin-left: 40px;
   }
 }
 
@@ -1443,13 +1418,6 @@ nav.side-bar .manager span {
   }
   .main .stats .column:first-child {
     margin-right: 0;
-  }
-}
-
-@media (max-width: 970px) {
-  .container {
-    margin-top: 80px;
-    margin-left: 40px;
   }
 }
 
