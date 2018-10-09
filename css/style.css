@@ -1382,7 +1382,33 @@ nav.side-bar .manager span {
 .postback .select-inputs .box-item select {
   margin-left: 10px;
   padding: 12px 10px;
-  width: 90%;
+  width: 95%;
+}
+
+.postback .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.postback .info .statuses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-basis: 50%;
+  padding-left: 10px;
+  border: 1px solid #e3e3e3;
+}
+
+.postback .info .send-after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-basis: 50%;
+  padding-left: 10px;
+  border: 1px solid #e3e3e3;
 }
 
 /* Header.topbar *****************************************/

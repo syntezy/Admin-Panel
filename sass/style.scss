@@ -943,6 +943,7 @@ nav.side-bar {
         display: flex;
         justify-content: center;
         align-items: center;
+
         .box-item {
             flex-basis: 33.33334%;
             display: flex;
@@ -964,8 +965,34 @@ nav.side-bar {
             select {
                 margin-left: 10px;
                 padding: 12px 10px;
-                width: 90%;
+                width: 95%;
             }
+        }
+    }
+
+    .info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .statuses {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            flex-basis: 50%;
+            padding-left: 10px;
+            border: 1px solid #e3e3e3;
+        }
+
+        .send-after {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            flex-basis: 50%;
+            padding-left: 10px;
+            border: 1px solid #e3e3e3;
         }
     }
 }

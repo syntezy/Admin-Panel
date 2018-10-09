@@ -1465,7 +1465,46 @@ nav.side-bar .manager span {
 .postback .select-inputs .box-item select {
   margin-left: 10px;
   padding: 12px 10px;
-  width: 90%;
+  width: 95%;
+}
+
+.postback .info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.postback .info .statuses {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 10px;
+  border: 1px solid #e3e3e3;
+}
+
+.postback .info .send-after {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 10px;
+  border: 1px solid #e3e3e3;
 }
 
 /* Header.topbar *****************************************/
