@@ -390,6 +390,230 @@ template {
   display: none;
 }
 
+/* Login *****************************************/
+.login {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(41, 41, 41, 0.698);
+  z-index: 9999;
+}
+
+.login .wrapper {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 700px;
+  background: #ffffff;
+  padding: 10px;
+}
+
+.login .wrapper h1 {
+  display: block;
+  padding: 0 15px 10px 15px;
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.login .wrapper .buttons {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-bottom: 25px;
+}
+
+.login .wrapper .buttons div {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  margin: 0 15px;
+}
+
+.login .wrapper .buttons div svg {
+  width: 14px;
+  height: 14px;
+}
+
+.login .wrapper .buttons .name,
+.login .wrapper .buttons .password {
+  position: relative;
+}
+
+.login .wrapper .buttons .name input,
+.login .wrapper .buttons .password input {
+  padding: 8px 8px 8px 30px;
+  border-radius: 3px;
+  display: block;
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 14px;
+  border: 1px solid #e3e3e3;
+  outline-color: #f58220;
+  box-shadow: 1px 1px #dddddd;
+}
+
+.login .wrapper .buttons .name svg,
+.login .wrapper .buttons .password svg {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+}
+
+.login .wrapper .buttons .button {
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 7px 30px;
+  background: #f58220;
+  display: inline-block;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.login .wrapper .buttons .button:hover {
+  background: #e7700a;
+  cursor: pointer;
+}
+
+/* Message box *****************************************/
+.message-box {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(41, 41, 41, 0.698);
+  z-index: 9999;
+}
+
+.message-box .wrapper {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+}
+
+.message-box .wrapper .header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.message-box .wrapper .header h1 {
+  display: block;
+  padding: 0 15px 0 15px;
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.message-box .wrapper .header svg {
+  width: 14px;
+  height: 14px;
+  fill: #a6a6a6;
+  padding: 20px 40px 30px 20px;
+}
+
+.message-box .wrapper .header svg:hover {
+  fill: #f58220;
+  cursor: pointer;
+}
+
+.message-box .wrapper .text {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  border-top: 1px solid #e3e3e3;
+}
+
+.message-box .wrapper .text .text-box {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.message-box .wrapper .text .text-box svg {
+  width: 14px;
+  height: 14px;
+  fill: #a6a6a6;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.message-box .wrapper .text .text-box svg:hover {
+  fill: #f58220;
+  cursor: pointer;
+}
+
+.message-box .wrapper .text .text-box textarea {
+  resize: none;
+  width: 100%;
+  height: auto;
+  padding: 20px 4px 4px 30px;
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 14px;
+  outline-color: #f58220;
+  border-radius: 3px;
+}
+
+.message-box .wrapper .box {
+  padding-left: 10px;
+}
+
+.message-box .wrapper .button {
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 42px;
+  padding: 7px 30px;
+  margin: 25px;
+  background: #f58220;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.message-box .wrapper .button:hover {
+  background: #e7700a;
+  cursor: pointer;
+}
+
 /* Global + reusable **************************************************/
 * {
   box-sizing: border-box;

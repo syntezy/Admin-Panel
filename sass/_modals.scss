@@ -1,0 +1,212 @@
+/* Login *****************************************/
+
+.login {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(41, 41, 41, 0.698);
+    z-index: 9999;
+
+    .wrapper {
+        position: absolute;
+        left: 50%;
+        top: 200px;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 700px;
+        background: #ffffff;
+        padding: 10px;
+
+        h1 {
+            display: block;
+            padding: 0 15px 10px 15px;
+            color: #a6a6a6;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 42px;
+            text-transform: uppercase;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding-bottom: 25px;
+
+            div {
+                flex-basis: 30%;
+                margin: 0 15px;
+
+                svg {
+                    width: 14px;
+                    height: 14px;
+                }
+            }
+
+            .name,
+            .password {
+                position: relative;
+
+                input {
+                    padding: 8px 8px 8px 30px;
+                    border-radius: 3px;
+                    display: block;
+                    color: #a6a6a6;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    border: 1px solid #e3e3e3;
+                    outline-color: #f58220;
+                    box-shadow: 1px 1px #dddddd;
+                }
+
+                svg {
+                    position: absolute;
+                    left: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    transition: all 0.3s;
+                }
+            }
+
+            .button {
+                text-align: center;
+                color: #ffffff;
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 300;
+                padding: 7px 30px;
+                background: #f58220;
+                display: inline-block;
+                border-radius: 3px;
+                transition: all 0.3s;
+
+                &:hover {
+                    background: darken(#f58220, 7%);
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+
+/* Message box *****************************************/
+
+.message-box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(41, 41, 41, 0.698);
+    z-index: 9999;
+
+    .wrapper {
+        position: absolute;
+        left: 50%;
+        top: 200px;
+        transform: translateX(-50%);
+        width: 100%;
+        max-width: 900px;
+        background: #ffffff;
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e3e3e3;
+
+            h1 {
+                display: block;
+                padding: 0 15px 0 15px;
+                color: #a6a6a6;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 42px;
+                text-transform: uppercase;
+            }
+
+            svg {
+                width: 14px;
+                height: 14px;
+                fill: #a6a6a6;
+                padding: 20px 40px 30px 20px;
+
+                &:hover {
+                    fill: #f58220;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid #e3e3e3;
+
+            .text-box {
+                position: relative;
+                display: flex;
+                align-items: center;
+                flex-basis: 80%;
+
+                svg {
+                    width: 14px;
+                    height: 14px;
+                    fill: #a6a6a6;
+                    position: absolute;
+                    left: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    &:hover {
+                        fill: #f58220;
+                        cursor: pointer;
+                    }
+                }
+
+                textarea {
+                    resize: none;
+                    width: 100%;
+                    height: auto;
+                    padding: 20px 4px 4px 30px;
+                    color: #a6a6a6;
+                    font-family: Roboto;
+                    font-size: 14px;
+                    outline-color: #f58220;
+                    border-radius: 3px;
+                }
+            }
+        }
+
+        .box {
+            padding-left: 10px;
+        }
+
+        .button {
+            text-align: center;
+            color: #ffffff;
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 42px;
+            padding: 7px 30px;
+            margin: 25px;
+            background: #f58220;
+            border-radius: 3px;
+            transition: all 0.3s;
+
+            &:hover {
+                background: darken(#f58220, 7%);
+                cursor: pointer;
+            }
+        }
+
+    }
+}
