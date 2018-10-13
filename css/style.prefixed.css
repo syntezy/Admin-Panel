@@ -879,7 +879,7 @@ nav.side-bar .manager span {
   font-weight: 300;
   line-height: 17px;
   display: block;
-  width: 400px;
+  width: 200px;
   margin-left: auto;
   display: -ms-flexbox;
   display: flex;
@@ -888,7 +888,8 @@ nav.side-bar .manager span {
 }
 
 .links ul li a .icons {
-  display: inline-block;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: auto;
   text-align: center;
 }
@@ -1414,6 +1415,7 @@ nav.side-bar .manager span {
   color: #808080;
   font-family: Roboto;
   padding: 10px;
+  outline-color: #f58220;
 }
 
 .postback .select-inputs {
@@ -1423,6 +1425,8 @@ nav.side-bar .manager span {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .postback .select-inputs .box-item {
@@ -1453,8 +1457,111 @@ nav.side-bar .manager span {
   margin-left: 10px;
   padding: 12px 10px;
   width: 90%;
+  outline-color: #f58220;
+  font-family: Roboto;
+  font-size: 16px;
 }
 
+.postback .info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  margin-top: 50px;
+}
+
+.postback .info h2 {
+  color: #808080;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.28px;
+  padding: 20px 15px 10px 10px;
+}
+
+.postback .info .statuses {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  border-right: 1px solid #e3e3e3;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 10px;
+  height: 300px;
+}
+
+.postback .info .statuses h2 span {
+  color: #ff0000;
+}
+
+.postback .info .statuses .statuses-box {
+  overflow: auto;
+}
+
+.postback .info .statuses .statuses-box input {
+  margin-right: 12px;
+  margin-bottom: 15px;
+}
+
+.postback .info .statuses .statuses-box span {
+  font-family: Roboto;
+  font-size: 16px;
+}
+
+.postback .info .send-after {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 10px;
+  height: 300px;
+}
+
+.postback .button {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.postback .button span {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 42px;
+  padding: 3px 30px;
+  margin: 25px;
+  background: #f58220;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.postback .button span:hover {
+  background: #e7700a;
+  cursor: pointer;
+}
+
+/* Global *****************************************/
 /* Header.topbar *****************************************/
 @media (max-width: 970px) {
   header.top-bar {
@@ -1531,10 +1638,12 @@ nav.side-bar .manager span {
     border: none;
     padding: 0;
     text-align: center;
+    padding-left: 40px;
   }
   .main .calendar .rectangle #left {
     padding: 0;
     text-align: center;
+    padding-left: 40px;
   }
   .main .calendar .rectangle span img {
     display: block;
@@ -1571,6 +1680,11 @@ nav.side-bar .manager span {
   }
   .links ul li a .icons {
     margin-left: 0;
+  }
+  .links ul li .link {
+    margin-left: 0;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1907,6 +2021,25 @@ nav.side-bar .manager span {
     display: inline-block;
     width: 50%;
     margin-left: 20px;
+  }
+}
+
+/* Section--Postback *****************************************/
+@media (max-width: 770px) {
+  .postback .box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .postback .box .box-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .postback .select-inputs .box-item {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .postback .select-inputs .box-item select {
+    width: 95%;
   }
 }
 /*# sourceMappingURL=style.prefixed.css.map */

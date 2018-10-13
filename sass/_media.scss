@@ -1,3 +1,11 @@
+/* Global *****************************************/
+
+// @media (max-width: 970px) {
+//     .container {
+//         margin: 120px 0 0 0;
+//     }
+// }
+
 /* Header.topbar *****************************************/
 
 @media (max-width: 970px) {
@@ -84,11 +92,13 @@
                 border: none;
                 padding: 0;
                 text-align: center;
+                padding-left: 40px;
             }
 
             #left {
                 padding: 0;
                 text-align: center;
+                padding-left: 40px;
             }
 
             span img {
@@ -131,6 +141,10 @@
                 .icons {
                     margin-left: 0;
                 }
+            }
+            .link {
+                margin-left: 0;
+                display: flex;
             }
         }
     }
@@ -360,6 +374,27 @@
         td:nth-of-type(4):before {
             content: "Account";
             @include th--styles;
+        }
+    }
+}
+
+/* Section--Postback *****************************************/
+
+@media (max-width: 770px) {
+    .postback {
+        .box {
+            flex-wrap: wrap;
+            .box-item {
+                flex-basis: 100%;
+            }
+        }
+        .select-inputs {
+            .box-item {
+                flex-basis: 100%;
+                select {
+                    width: 95%;
+                }
+            }
         }
     }
 }
