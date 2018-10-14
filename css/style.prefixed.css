@@ -492,6 +492,7 @@ template {
 
 /* Message box *****************************************/
 .message-box {
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -504,7 +505,7 @@ template {
 .message-box .wrapper {
   position: absolute;
   left: 50%;
-  top: 200px;
+  top: 100px;
   transform: translateX(-50%);
   width: 100%;
   max-width: 900px;
@@ -591,8 +592,64 @@ template {
   border-radius: 3px;
 }
 
-.message-box .wrapper .box {
-  padding-left: 10px;
+.message-box .wrapper .box .manager-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+}
+
+.message-box .wrapper .box .manager-box .info h2 {
+  display: block;
+  margin-left: 15px;
+  color: #1a1a1a;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 0;
+}
+
+.message-box .wrapper .box .manager-box .info .status {
+  margin-left: 15px;
+  background: #00b400;
+  border-radius: 3px;
+  display: inline-block;
+  font-family: Roboto;
+  padding: 5px 8px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.message-box .wrapper .box .chat {
+  padding: 15px 10px 150px 10px;
+}
+
+.message-box .wrapper .box .chat ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+.message-box .wrapper .box .chat ul li {
+  margin: 12px 0;
+  padding: 7px 10px;
+  background: #dddddd;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.message-box .wrapper .box .chat ul li:nth-of-type(odd) {
+  background: #f1f1f1;
 }
 
 .message-box .wrapper .button {
@@ -610,6 +667,86 @@ template {
 }
 
 .message-box .wrapper .button:hover {
+  background: #e7700a;
+  cursor: pointer;
+}
+
+/* Logout *****************************************/
+.logout {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(41, 41, 41, 0.698);
+  z-index: 9999;
+}
+
+.logout .wrapper {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+}
+
+.logout .wrapper h1 {
+  display: block;
+  padding: 10px 15px;
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+.logout .wrapper .buttons {
+  border-top: 1px solid #e3e3e3;
+  padding-top: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.logout .wrapper .buttons span {
+  margin: 0 25px 15px 25px;
+}
+
+.logout .wrapper .buttons span:first-child {
+  background: #a6a6a6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #ffffff;
+  padding: 0 40px;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.logout .wrapper .buttons span:first-child:hover {
+  background: #949494;
+  cursor: pointer;
+}
+
+.logout .wrapper .buttons span:last-child {
+  background: #f58220;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #ffffff;
+  padding: 0 40px;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.logout .wrapper .buttons span:last-child:hover {
   background: #e7700a;
   cursor: pointer;
 }
