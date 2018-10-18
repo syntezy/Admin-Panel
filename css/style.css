@@ -856,6 +856,45 @@ template {
   border-bottom: 1px solid #e3e3e3;
 }
 
+.add-banners .wrapper .checkboxes .box .box-items li {
+  flex-basis: 33.33334%;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+
+.add-banners .wrapper .checkboxes .box .box-items li input {
+  margin: 10px 20px 10px 20px;
+  font-family: Roboto;
+}
+
+.add-banners .wrapper .checkboxes .box .box-items li:hover {
+  background: #f4f4f4;
+  cursor: pointer;
+}
+
+.add-banners .wrapper .checkboxes .box .box-items li:hover a svg {
+  opacity: 1;
+}
+
+.add-banners .wrapper .checkboxes .box .box-items li a {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.add-banners .wrapper .checkboxes .box .box-items li a svg {
+  opacity: 0;
+  fill: #808080;
+  width: 15px;
+  height: 15px;
+  transition: all 0.3s;
+}
+
+.add-banners .wrapper .checkboxes .box .box-items li a svg:hover {
+  fill: #f58220;
+}
+
 .add-banners .wrapper .checkboxes .box .box-items input {
   margin-right: 12px;
   margin-bottom: 15px;
@@ -1049,16 +1088,54 @@ template {
 }
 
 .add-links .wrapper .checkboxes .box {
-  flex-basis: 33.3334%;
   height: 250px;
+}
+
+.add-links .wrapper .checkboxes .box .box-items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
   overflow: auto;
 }
 
-.add-links .wrapper .checkboxes .box .box-items input {
-  margin-right: 12px;
-  margin-bottom: 15px;
-  margin-left: 20px;
+.add-links .wrapper .checkboxes .box .box-items li {
+  flex-basis: 33.33334%;
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  transition: all 0.3s;
+}
+
+.add-links .wrapper .checkboxes .box .box-items li input {
+  margin: 10px 20px 10px 20px;
   font-family: Roboto;
+}
+
+.add-links .wrapper .checkboxes .box .box-items li:hover {
+  background: #f4f4f4;
+  cursor: pointer;
+}
+
+.add-links .wrapper .checkboxes .box .box-items li:hover a svg {
+  opacity: 1;
+}
+
+.add-links .wrapper .checkboxes .box .box-items li a {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.add-links .wrapper .checkboxes .box .box-items li a svg {
+  opacity: 0;
+  fill: #808080;
+  width: 15px;
+  height: 15px;
+  transition: all 0.3s;
+}
+
+.add-links .wrapper .checkboxes .box .box-items li a svg:hover {
+  fill: #f58220;
 }
 
 .add-links .wrapper .link-box {
@@ -1142,6 +1219,11 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+input, select, option, textarea {
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
 }
 
 .container {

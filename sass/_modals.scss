@@ -480,6 +480,38 @@
                     border-bottom: 1px solid #e3e3e3;
                 }
                 .box-items {
+                    li {
+                        flex-basis: 33.33334%;
+                        display: flex;
+                        align-items: center;
+                        margin: 5px 0;
+                        transition: all 0.3s;
+                        input {
+                            margin: 10px 20px 10px 20px;
+                            font-family: Roboto;
+                        }
+                        &:hover {
+                            background: #f4f4f4;
+                            cursor: pointer;
+                        }
+                        &:hover a svg {
+                            opacity: 1;
+                        }
+                        a {
+                            margin-left: auto;
+                            margin-right: 10px;
+                            svg {
+                                opacity: 0;
+                                fill: #808080;
+                                width: 15px;
+                                height: 15px;
+                                transition: all 0.3s;
+                                &:hover {
+                                    fill: #f58220;
+                                }
+                            }
+                        }
+                    }
                     input {
                         margin-right: 12px;
                         margin-bottom: 15px;
@@ -670,16 +702,46 @@
             }
 
             .box {
-                flex-basis: 33.3334%;
                 height: 250px;
-                overflow: auto;
                 .box-items {
-                    input {
-                        margin-right: 12px;
-                        margin-bottom: 15px;
-                        margin-left: 20px;
-                        font-family: Roboto;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    overflow: auto;
+                    li {
+                        flex-basis: 33.33334%;
+                        display: flex;
+                        align-items: center;
+                        margin: 5px 0;
+                        transition: all 0.3s;
+                        input {
+                            margin: 10px 20px 10px 20px;
+                            font-family: Roboto;
+                        }
+                        &:hover {
+                            background: #f4f4f4;
+                            cursor: pointer;
+                        }
+                        &:hover a svg {
+                            opacity: 1;
+                        }
+                        a {
+                            margin-left: auto;
+                            margin-right: 10px;
+                            svg {
+                                opacity: 0;
+                                fill: #808080;
+                                width: 15px;
+                                height: 15px;
+                                transition: all 0.3s;
+                                &:hover {
+                                    fill: #f58220;
+                                }
+                            }
+                        }
                     }
+                    
                 }
             }
         }
