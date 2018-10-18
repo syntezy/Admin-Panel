@@ -999,6 +999,10 @@ template {
   color: #808080;
 }
 
+.add-links .wrapper .select-inputs .box-item select.languages {
+  padding-left: 60px;
+}
+
 .add-links .wrapper .select-inputs .box-item .input {
   font-family: Roboto;
   font-size: 16px;
