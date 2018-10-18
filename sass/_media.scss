@@ -1,11 +1,3 @@
-/* Global *****************************************/
-
-// @media (max-width: 970px) {
-//     .container {
-//         margin: 120px 0 0 0;
-//     }
-// }
-
 /* Header.topbar *****************************************/
 
 @media (max-width: 970px) {
@@ -19,6 +11,7 @@
 @media (max-width: 970px) {
     nav.side-bar {
         background: transparent;
+        height: 0;
 
         .logo {
             background: #1b1b1b;
@@ -35,7 +28,7 @@
             transform: translateX(-200px);
             transition: all 0.3s;
             background: #1b1b1b;
-            height: 100vh;
+            height: 0;
         }
     }
 
@@ -46,6 +39,7 @@
 
       .menu-to-hide {
         transform: none;
+        height: 100vh;
       }
     }
 

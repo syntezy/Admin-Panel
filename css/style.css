@@ -720,7 +720,6 @@ template {
 
 /* Add banners *****************************************/
 .add-banners {
-  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -930,6 +929,7 @@ template {
 
 /* Add links *****************************************/
 .add-links {
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -2204,7 +2204,6 @@ nav.side-bar .manager span {
   cursor: pointer;
 }
 
-/* Global *****************************************/
 /* Header.topbar *****************************************/
 @media (max-width: 970px) {
   header.top-bar {
@@ -2216,6 +2215,7 @@ nav.side-bar .manager span {
 @media (max-width: 970px) {
   nav.side-bar {
     background: transparent;
+    height: 0;
   }
   nav.side-bar .logo {
     background: #1b1b1b;
@@ -2230,13 +2230,14 @@ nav.side-bar .manager span {
     transform: translateX(-200px);
     transition: all 0.3s;
     background: #1b1b1b;
-    height: 100vh;
+    height: 0;
   }
   nav.side-bar.toggle .logo {
     width: 200px;
   }
   nav.side-bar.toggle .menu-to-hide {
     transform: none;
+    height: 100vh;
   }
   .container {
     margin-top: 80px;
