@@ -673,6 +673,7 @@ template {
 
 /* Logout *****************************************/
 .logout {
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -747,6 +748,450 @@ template {
 }
 
 .logout .wrapper .buttons span:last-child:hover {
+  background: #e7700a;
+  cursor: pointer;
+}
+
+/* Add banners *****************************************/
+.add-banners {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(41, 41, 41, 0.698);
+  z-index: 9999;
+}
+
+.add-banners .wrapper {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+}
+
+.add-banners .wrapper h1 {
+  display: block;
+  padding: 5px 15px 10px 10px;
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.add-banners .wrapper .select-inputs,
+.add-banners .wrapper .select-inputs__second {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.add-banners .wrapper .select-inputs .box-item,
+.add-banners .wrapper .select-inputs__second .box-item {
+  -ms-flex-preferred-size: 33.33334%;
+      flex-basis: 33.33334%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+.add-banners .wrapper .select-inputs .box-item h2,
+.add-banners .wrapper .select-inputs__second .box-item h2 {
+  color: #808080;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  letter-spacing: -0.28px;
+  padding: 20px 15px 0 10px;
+  margin-bottom: 3px;
+}
+
+.add-banners .wrapper .select-inputs .box-item select,
+.add-banners .wrapper .select-inputs__second .box-item select {
+  margin-left: 10px;
+  padding: 12px 10px;
+  width: 90%;
+  outline-color: #f58220;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #808080;
+}
+
+.add-banners .wrapper .select-inputs .box-item .input,
+.add-banners .wrapper .select-inputs__second .box-item .input {
+  font-family: Roboto;
+  font-size: 16px;
+  width: 90%;
+}
+
+.add-banners .wrapper .select-inputs .box-item .input input,
+.add-banners .wrapper .select-inputs__second .box-item .input input {
+  margin-left: 10px;
+  padding: 13px 10px;
+  width: 100%;
+  outline-color: #f58220;
+  font-family: Roboto;
+  color: #808080;
+}
+
+.add-banners .wrapper .select-inputs .box-item:nth-child(1), .add-banners .wrapper .select-inputs .box-item:nth-child(2) {
+  -ms-flex-preferred-size: 42%;
+      flex-basis: 42%;
+}
+
+.add-banners .wrapper .select-inputs .box-item:nth-child(3) {
+  -ms-flex-preferred-size: 16%;
+      flex-basis: 16%;
+}
+
+.add-banners .wrapper .checkboxes {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 10px;
+  height: 300px;
+}
+
+.add-banners .wrapper .checkboxes .box {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  height: 250px;
+  overflow: auto;
+}
+
+.add-banners .wrapper .checkboxes .box h2 {
+  color: #808080;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  letter-spacing: -0.28px;
+  padding: 0 15px 10px 0;
+  margin-bottom: 3px;
+}
+
+.add-banners .wrapper .checkboxes .box:first-child {
+  border-right: 1px solid #e3e3e3;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.add-banners .wrapper .checkboxes .box:last-child {
+  padding-left: 10px;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.add-banners .wrapper .checkboxes .box .box-items input {
+  margin-right: 12px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  font-family: Roboto;
+}
+
+.add-banners .wrapper .link-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-bottom: 20px;
+}
+
+.add-banners .wrapper .link-box input {
+  width: 60%;
+  color: #808080;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 42px;
+  outline-color: #f58220;
+  padding-left: 5px;
+}
+
+.add-banners .wrapper .link-box .button.gray {
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 42px;
+  padding: 3px 30px;
+  background: #a6a6a6;
+  display: inline-block;
+  border-radius: 3px;
+  transition: all 0.3s;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.add-banners .wrapper .link-box .button.gray:hover {
+  background: #f58220;
+  cursor: pointer;
+}
+
+.add-banners .wrapper .link-box .button.gray svg {
+  height: 20px;
+  width: 20px;
+  fill: #808080;
+  margin-right: 5px;
+}
+
+.add-banners .wrapper .link-box .button:last-child {
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 42px;
+  padding: 3px 30px;
+  background: #f58220;
+  display: inline-block;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.add-banners .wrapper .link-box .button:last-child:hover {
+  background: #e7700a;
+  cursor: pointer;
+}
+
+/* Add links *****************************************/
+.add-links {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(41, 41, 41, 0.698);
+  z-index: 9999;
+}
+
+.add-links .wrapper {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 900px;
+  background: #ffffff;
+}
+
+.add-links .wrapper h1 {
+  display: block;
+  padding: 5px 15px 10px 10px;
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.add-links .wrapper .select-inputs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.add-links .wrapper .select-inputs .box-item {
+  -ms-flex-preferred-size: 33.33334%;
+      flex-basis: 33.33334%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: start;
+      align-items: flex-start;
+}
+
+.add-links .wrapper .select-inputs .box-item h2 {
+  color: #808080;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  letter-spacing: -0.28px;
+  padding: 20px 15px 0 10px;
+  margin-bottom: 3px;
+}
+
+.add-links .wrapper .select-inputs .box-item select {
+  margin-left: 10px;
+  padding: 12px 10px;
+  width: 90%;
+  outline-color: #f58220;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #808080;
+}
+
+.add-links .wrapper .select-inputs .box-item .input {
+  font-family: Roboto;
+  font-size: 16px;
+  width: 90%;
+}
+
+.add-links .wrapper .select-inputs .box-item .input input {
+  margin-left: 10px;
+  padding: 13px 10px;
+  width: 100%;
+  outline-color: #f58220;
+  font-family: Roboto;
+  color: #808080;
+}
+
+.add-links .wrapper .select-inputs .box-item {
+  -ms-flex-preferred-size: 33.3334%;
+      flex-basis: 33.3334%;
+}
+
+.add-links .wrapper .checkboxes {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+  height: 300px;
+  overflow: auto;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  margin: 20px auto;
+}
+
+.add-links .wrapper .checkboxes h2 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  color: #808080;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+  letter-spacing: -0.28px;
+  padding: 0 15px 10px 0;
+  margin-bottom: 3px;
+}
+
+.add-links .wrapper .checkboxes .box {
+  -ms-flex-preferred-size: 33.3334%;
+      flex-basis: 33.3334%;
+  height: 250px;
+  overflow: auto;
+}
+
+.add-links .wrapper .checkboxes .box .box-items input {
+  margin-right: 12px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  font-family: Roboto;
+}
+
+.add-links .wrapper .link-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+  -ms-flex-align: center;
+      align-items: center;
+  padding-bottom: 20px;
+}
+
+.add-links .wrapper .link-box input {
+  width: 60%;
+  color: #808080;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 42px;
+  outline-color: #f58220;
+  padding-left: 5px;
+}
+
+.add-links .wrapper .link-box .button.gray {
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 42px;
+  padding: 3px 30px;
+  background: #a6a6a6;
+  display: inline-block;
+  border-radius: 3px;
+  transition: all 0.3s;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.add-links .wrapper .link-box .button.gray:hover {
+  background: #f58220;
+  cursor: pointer;
+}
+
+.add-links .wrapper .link-box .button.gray svg {
+  height: 20px;
+  width: 20px;
+  fill: #808080;
+  margin-right: 5px;
+}
+
+.add-links .wrapper .link-box .button:last-child {
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 42px;
+  padding: 3px 30px;
+  background: #f58220;
+  display: inline-block;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.add-links .wrapper .link-box .button:last-child:hover {
   background: #e7700a;
   cursor: pointer;
 }
@@ -1859,15 +2304,12 @@ nav.side-bar .manager span {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   padding: 10px;
-  height: 300px;
+  height: 250px;
+  overflow: auto;
 }
 
 .postback .info .statuses h2 span {
   color: #ff0000;
-}
-
-.postback .info .statuses .statuses-box {
-  overflow: auto;
 }
 
 .postback .info .statuses .statuses-box input {

@@ -989,14 +989,15 @@ nav.side-bar {
             border-right: 1px solid #e3e3e3;
             flex-basis: 50%;
             padding: 10px;
-            height: 300px;
+            height: 250px;
+            overflow: auto;
 
             h2 span {
                 color: #ff0000;
             }
 
             .statuses-box {
-                overflow: auto;
+                // overflow: auto;
 
                 input {
                     margin-right: 12px;
