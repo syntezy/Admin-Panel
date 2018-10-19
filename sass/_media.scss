@@ -293,7 +293,6 @@
     .banners {
         ul li {
             flex-direction: column;
-
             .link {
                 opacity: 1;
             }
@@ -309,6 +308,10 @@
                 .icons {
                     margin-left: 0;
                 }
+            }
+            .link {
+                margin-left: 0;
+                display: flex;
             }
         }
     }
@@ -392,3 +395,124 @@
         }
     }
 }
+
+
+/* Modal windows *****************************************/
+
+
+@media (max-width: 970px) {
+    /* Login modal *****************************************/
+    .login .wrapper .buttons {
+        flex-direction: column;
+        div, input {
+            width: 100%;
+            margin: 5px 0;
+        }
+    }
+    /* Message box modal **************************************/
+    .message-box .wrapper {
+        .button {
+            margin: 25px 0;
+        }
+        .header h1 {
+            font-size: 14px;
+        }
+    } 
+    /* Logout *****************************************/
+    .logout .wrapper {
+        h1 {
+            font-size: 19px;
+        }
+        .buttons {
+            justify-content: center;
+        }
+    }
+    /* Add banners *****************************************/
+    .add-banners {
+        height: 200vh;
+        .wrapper {
+            .select-inputs, .select-inputs__second {
+                margin-left: 30px;
+                .box-item {
+                    &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                        flex-basis: 100%;
+                    }
+                    h2 {
+                        margin-top: 0;
+                    }
+                }
+            }
+            .checkboxes {
+                height: auto;
+                .box {
+                    flex-basis: 100%;
+                }
+            }
+        } 
+    } 
+    /* Add links *****************************************/
+    .add-links {
+        height: 150vh;
+        .wrapper {
+            .select-inputs {
+                margin-left: 30px;
+                .box-item {
+                    flex-basis: 100%;
+                }
+            }
+            .checkboxes {
+                justify-content: center;
+                .box .box-items li {
+                    flex-basis: 50%;
+                }
+            } 
+        } 
+    }
+}
+
+@media (max-width: 690px) {
+
+    /* Add banners *****************************************/
+    .add-banners {
+        height: 200vh;
+        .wrapper {
+            .select-inputs, .select-inputs__second {
+                margin-left: 10px;
+            }
+            .checkboxes {
+                height: auto;
+                .box {
+                    flex-basis: 100%;
+                }
+            }
+            .link-box {
+                flex-direction: column;
+                .button, input {
+                    margin: 5px;
+                    width: 80%;
+                }
+                .button.gray {
+                    justify-content: center;
+                }
+            }
+        } 
+    } 
+
+    /* Add links *****************************************/
+    .add-links .wrapper {
+        .select-inputs {
+            margin-left: 10px;
+        }
+        .link-box {
+            flex-direction: column;
+            .button, input {
+                margin: 5px;
+                width: 80%;
+            }
+            .button.gray {
+                justify-content: center;
+            }
+        }
+    } 
+}
+

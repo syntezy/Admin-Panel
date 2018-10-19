@@ -60,7 +60,6 @@
                     font-size: 14px;
                     border: 1px solid #e3e3e3;
                     outline-color: #f58220;
-                    box-shadow: 1px 1px #dddddd;
                 }
 
                 svg {
@@ -147,7 +146,7 @@
 
         .text {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
             border-top: 1px solid #e3e3e3;
 
@@ -182,6 +181,24 @@
                     font-size: 14px;
                     outline-color: #f58220;
                     border-radius: 3px;
+                }
+            }
+            .button {
+                text-align: center;
+                color: #ffffff;
+                font-family: Roboto;
+                font-size: 18px;
+                font-weight: 300;
+                line-height: 42px;
+                padding: 7px 30px;
+                margin: 25px;
+                background: #f58220;
+                border-radius: 3px;
+                transition: all 0.3s;
+    
+                &:hover {
+                    background: darken(#f58220, 7%);
+                    cursor: pointer;
                 }
             }
         }
@@ -243,26 +260,6 @@
                 }
             }
         }
-
-        .button {
-            text-align: center;
-            color: #ffffff;
-            font-family: Roboto;
-            font-size: 18px;
-            font-weight: 300;
-            line-height: 42px;
-            padding: 7px 30px;
-            margin: 25px;
-            background: #f58220;
-            border-radius: 3px;
-            transition: all 0.3s;
-
-            &:hover {
-                background: darken(#f58220, 7%);
-                cursor: pointer;
-            }
-        }
-
     }
 }
 
@@ -349,7 +346,7 @@
 /* Add banners *****************************************/
 
 .add-banners {
-    // display: none;
+    display: none;
     position: absolute;
     left: 0;
     top: 0;
@@ -449,6 +446,7 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            flex-wrap: wrap;
             padding: 10px;
             height: 300px;
 
@@ -486,6 +484,10 @@
                         align-items: center;
                         margin: 5px 0;
                         transition: all 0.3s;
+                        label {
+                            font-family: Roboto;
+                            font-size: 15px;
+                        }
                         input {
                             margin: 10px 20px 10px 20px;
                             font-family: Roboto;
@@ -715,6 +717,10 @@
                         align-items: center;
                         margin: 5px 0;
                         transition: all 0.3s;
+                        label {
+                            font-family: Roboto;
+                            font-size: 15px;
+                        }
                         input {
                             margin: 10px 20px 10px 20px;
                             font-family: Roboto;

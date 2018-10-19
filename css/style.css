@@ -444,7 +444,6 @@ template {
   font-size: 14px;
   border: 1px solid #e3e3e3;
   outline-color: #f58220;
-  box-shadow: 1px 1px #dddddd;
 }
 
 .login .wrapper .buttons .name svg,
@@ -528,7 +527,7 @@ template {
 
 .message-box .wrapper .text {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   border-top: 1px solid #e3e3e3;
 }
@@ -565,6 +564,25 @@ template {
   font-size: 14px;
   outline-color: #f58220;
   border-radius: 3px;
+}
+
+.message-box .wrapper .text .button {
+  text-align: center;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 42px;
+  padding: 7px 30px;
+  margin: 25px;
+  background: #f58220;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.message-box .wrapper .text .button:hover {
+  background: #e7700a;
+  cursor: pointer;
 }
 
 .message-box .wrapper .box .manager-box {
@@ -619,25 +637,6 @@ template {
 
 .message-box .wrapper .box .chat ul li:nth-of-type(odd) {
   background: #f1f1f1;
-}
-
-.message-box .wrapper .button {
-  text-align: center;
-  color: #ffffff;
-  font-family: Roboto;
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 42px;
-  padding: 7px 30px;
-  margin: 25px;
-  background: #f58220;
-  border-radius: 3px;
-  transition: all 0.3s;
-}
-
-.message-box .wrapper .button:hover {
-  background: #e7700a;
-  cursor: pointer;
 }
 
 /* Logout *****************************************/
@@ -720,6 +719,7 @@ template {
 
 /* Add banners *****************************************/
 .add-banners {
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -822,6 +822,7 @@ template {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   padding: 10px;
   height: 300px;
 }
@@ -862,6 +863,11 @@ template {
   align-items: center;
   margin: 5px 0;
   transition: all 0.3s;
+}
+
+.add-banners .wrapper .checkboxes .box .box-items li label {
+  font-family: Roboto;
+  font-size: 15px;
 }
 
 .add-banners .wrapper .checkboxes .box .box-items li input {
@@ -1107,6 +1113,11 @@ template {
   transition: all 0.3s;
 }
 
+.add-links .wrapper .checkboxes .box .box-items li label {
+  font-family: Roboto;
+  font-size: 15px;
+}
+
 .add-links .wrapper .checkboxes .box .box-items li input {
   margin: 10px 20px 10px 20px;
   font-family: Roboto;
@@ -1200,6 +1211,11 @@ template {
 .add-links .wrapper .link-box .button:last-child:hover {
   background: #e7700a;
   cursor: pointer;
+}
+
+/* Scrollbar *****************************************/
+.simplebar-scrollbar:before {
+  background-color: pink;
 }
 
 /* Global + reusable **************************************************/
@@ -1413,6 +1429,10 @@ nav.side-bar .manager {
   justify-content: space-evenly;
   align-items: center;
   position: relative;
+}
+
+nav.side-bar .manager:hover {
+  cursor: pointer;
 }
 
 nav.side-bar .manager::before {
@@ -1962,14 +1982,14 @@ nav.side-bar .manager span {
   font-weight: 300;
   line-height: 17px;
   display: block;
-  width: 550px;
+  width: 200px;
   margin-left: auto;
   display: flex;
   align-items: center;
 }
 
 .banners ul li a .icons {
-  display: inline-block;
+  display: flex;
   margin-left: auto;
   text-align: center;
 }
@@ -2082,7 +2102,7 @@ nav.side-bar .manager span {
   font-size: 16px;
   font-weight: 300;
   line-height: 42px;
-  min-width: 300px;
+  min-width: 250px;
   outline-color: #f58220;
   padding-left: 10px;
 }
@@ -2235,7 +2255,7 @@ nav.side-bar .manager span {
   flex-basis: 50%;
   padding: 10px;
   height: 250px;
-  overflow: auto;
+  overflow-y: scroll;
 }
 
 .postback .info .statuses h2 span {
@@ -2247,7 +2267,7 @@ nav.side-bar .manager span {
   margin-bottom: 15px;
 }
 
-.postback .info .statuses .statuses-box span {
+.postback .info .statuses .statuses-box label {
   font-family: Roboto;
   font-size: 16px;
 }
@@ -2260,6 +2280,12 @@ nav.side-bar .manager span {
   flex-basis: 50%;
   padding: 10px;
   height: 300px;
+}
+
+.postback .info .send-after input {
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 50px;
 }
 
 .postback .button {
@@ -2286,6 +2312,7 @@ nav.side-bar .manager span {
   cursor: pointer;
 }
 
+/* Custom styles */
 /* Header.topbar *****************************************/
 @media (max-width: 970px) {
   header.top-bar {
@@ -2612,6 +2639,10 @@ nav.side-bar .manager span {
   .banners ul li a .icons {
     margin-left: 0;
   }
+  .banners ul li .link {
+    margin-left: 0;
+    display: flex;
+  }
 }
 
 /* Section--personal-data *****************************************/
@@ -2735,6 +2766,107 @@ nav.side-bar .manager span {
   }
   .postback .select-inputs .box-item select {
     width: 95%;
+  }
+}
+
+/* Modal windows *****************************************/
+@media (max-width: 970px) {
+  /* Login modal *****************************************/
+  .login .wrapper .buttons {
+    flex-direction: column;
+  }
+  .login .wrapper .buttons div, .login .wrapper .buttons input {
+    width: 100%;
+    margin: 5px 0;
+  }
+  /* Message box modal **************************************/
+  .message-box .wrapper .button {
+    margin: 25px 0;
+  }
+  .message-box .wrapper .header h1 {
+    font-size: 14px;
+  }
+  /* Logout *****************************************/
+  .logout .wrapper h1 {
+    font-size: 19px;
+  }
+  .logout .wrapper .buttons {
+    justify-content: center;
+  }
+  /* Add banners *****************************************/
+  .add-banners {
+    height: 200vh;
+  }
+  .add-banners .wrapper .select-inputs, .add-banners .wrapper .select-inputs__second {
+    margin-left: 30px;
+  }
+  .add-banners .wrapper .select-inputs .box-item:nth-child(1), .add-banners .wrapper .select-inputs .box-item:nth-child(2), .add-banners .wrapper .select-inputs .box-item:nth-child(3), .add-banners .wrapper .select-inputs__second .box-item:nth-child(1), .add-banners .wrapper .select-inputs__second .box-item:nth-child(2), .add-banners .wrapper .select-inputs__second .box-item:nth-child(3) {
+    flex-basis: 100%;
+  }
+  .add-banners .wrapper .select-inputs .box-item h2, .add-banners .wrapper .select-inputs__second .box-item h2 {
+    margin-top: 0;
+  }
+  .add-banners .wrapper .checkboxes {
+    height: auto;
+  }
+  .add-banners .wrapper .checkboxes .box {
+    flex-basis: 100%;
+  }
+  /* Add links *****************************************/
+  .add-links {
+    height: 150vh;
+  }
+  .add-links .wrapper .select-inputs {
+    margin-left: 30px;
+  }
+  .add-links .wrapper .select-inputs .box-item {
+    flex-basis: 100%;
+  }
+  .add-links .wrapper .checkboxes {
+    justify-content: center;
+  }
+  .add-links .wrapper .checkboxes .box .box-items li {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 690px) {
+  /* Add banners *****************************************/
+  .add-banners {
+    height: 200vh;
+  }
+  .add-banners .wrapper .select-inputs, .add-banners .wrapper .select-inputs__second {
+    margin-left: 10px;
+  }
+  .add-banners .wrapper .checkboxes {
+    height: auto;
+  }
+  .add-banners .wrapper .checkboxes .box {
+    flex-basis: 100%;
+  }
+  .add-banners .wrapper .link-box {
+    flex-direction: column;
+  }
+  .add-banners .wrapper .link-box .button, .add-banners .wrapper .link-box input {
+    margin: 5px;
+    width: 80%;
+  }
+  .add-banners .wrapper .link-box .button.gray {
+    justify-content: center;
+  }
+  /* Add links *****************************************/
+  .add-links .wrapper .select-inputs {
+    margin-left: 10px;
+  }
+  .add-links .wrapper .link-box {
+    flex-direction: column;
+  }
+  .add-links .wrapper .link-box .button, .add-links .wrapper .link-box input {
+    margin: 5px;
+    width: 80%;
+  }
+  .add-links .wrapper .link-box .button.gray {
+    justify-content: center;
   }
 }
 
