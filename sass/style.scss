@@ -287,6 +287,7 @@ nav.side-bar {
             display: inline-block;
             padding: 5px 20px;
             border: 1px solid #e3e3e3;
+            border-radius: 3px;
 
             input[type=date] {
                 border: none;
@@ -401,6 +402,7 @@ nav.side-bar {
 /* Section--Links ******************************************************************/
 
 .links {
+    display: none;
     background: #ffffff;
     box-shadow: 1px 1px 5px #d4d4d4;
 
@@ -507,6 +509,7 @@ nav.side-bar {
 
 .details,
 .payout {
+    display: none;
     background: #ffffff;
     box-shadow: 1px 1px 5px #d4d4d4;
 
@@ -534,6 +537,7 @@ nav.side-bar {
             display: inline-block;
             padding: 5px 20px;
             border: 1px solid #e3e3e3;
+            border-radius: 3px;
 
             input[type=date] {
                 border: none;
@@ -678,6 +682,7 @@ nav.side-bar {
 /* Section--banners ******************************************************************/
 
 .banners {
+    display: none;
     background: #ffffff;
     box-shadow: 1px 1px 5px #d4d4d4;
 
@@ -783,6 +788,7 @@ nav.side-bar {
 /* Section--Personal data ************************************************************/
 
 .personal-data {
+    display: none;
     background: #ffffff;
     box-shadow: 1px 1px 5px #d4d4d4;
 
@@ -872,6 +878,7 @@ nav.side-bar {
 /* Section--Postback **************************************************/
 
 .postback {
+    display: none;
     background: #ffffff;
     box-shadow: 1px 1px 5px #d4d4d4;
 
@@ -1057,6 +1064,5 @@ nav.side-bar {
     }
 }
 
-/* Custom styles */
 
 @import 'media';

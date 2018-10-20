@@ -773,7 +773,11 @@ template {
   background: #ffffff;
 }
 
-.add-banners .wrapper h1 {
+.add-banners .wrapper .header {
+  position: relative;
+}
+
+.add-banners .wrapper .header h1 {
   display: block;
   padding: 5px 15px 10px 10px;
   color: #a6a6a6;
@@ -783,6 +787,20 @@ template {
   line-height: 42px;
   text-transform: uppercase;
   border-bottom: 1px solid #e3e3e3;
+}
+
+.add-banners .wrapper .header svg {
+  position: absolute;
+  right: 40px;
+  top: 16px;
+  width: 18px;
+  height: 18px;
+  fill: #a6a6a6;
+}
+
+.add-banners .wrapper .header svg:hover {
+  fill: #f58220;
+  cursor: pointer;
 }
 
 .add-banners .wrapper .select-inputs,
@@ -834,6 +852,20 @@ template {
   font-family: Roboto;
   font-size: 16px;
   color: #808080;
+}
+
+.add-banners .wrapper .select-inputs .box-item select svg,
+.add-banners .wrapper .select-inputs__second .box-item select svg {
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+.add-banners .wrapper .select-inputs .box-item select.languages,
+.add-banners .wrapper .select-inputs__second .box-item select.languages {
+  padding-left: 60px;
 }
 
 .add-banners .wrapper .select-inputs .box-item .input,
@@ -1032,7 +1064,6 @@ template {
 
 /* Add links *****************************************/
 .add-links {
-  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -1050,6 +1081,7 @@ template {
   width: 100%;
   max-width: 900px;
   background: #ffffff;
+  position: absolute;
 }
 
 .add-links .wrapper h1 {
@@ -1062,6 +1094,20 @@ template {
   line-height: 42px;
   text-transform: uppercase;
   border-bottom: 1px solid #e3e3e3;
+}
+
+.add-links .wrapper svg#closeLinks {
+  position: absolute;
+  right: 40px;
+  top: 27px;
+  width: 18px;
+  height: 18px;
+  fill: #a6a6a6;
+}
+
+.add-links .wrapper svg#closeLinks:hover {
+  fill: #f58220;
+  cursor: pointer;
 }
 
 .add-links .wrapper .select-inputs {
@@ -1600,6 +1646,7 @@ nav.side-bar .manager span {
   display: inline-block;
   padding: 5px 20px;
   border: 1px solid #e3e3e3;
+  border-radius: 3px;
 }
 
 .main .calendar .rectangle input[type=date] {
@@ -1719,6 +1766,7 @@ nav.side-bar .manager span {
 
 /* Section--Links ******************************************************************/
 .links {
+  display: none;
   background: #ffffff;
   box-shadow: 1px 1px 5px #d4d4d4;
 }
@@ -1830,6 +1878,7 @@ nav.side-bar .manager span {
 /* Section--details + Section--Payout ************************************************************/
 .details,
 .payout {
+  display: none;
   background: #ffffff;
   box-shadow: 1px 1px 5px #d4d4d4;
 }
@@ -1865,6 +1914,7 @@ nav.side-bar .manager span {
   display: inline-block;
   padding: 5px 20px;
   border: 1px solid #e3e3e3;
+  border-radius: 3px;
 }
 
 .details .calendar .rectangle input[type=date],
@@ -2034,6 +2084,7 @@ nav.side-bar .manager span {
 
 /* Section--banners ******************************************************************/
 .banners {
+  display: none;
   background: #ffffff;
   box-shadow: 1px 1px 5px #d4d4d4;
 }
@@ -2144,6 +2195,7 @@ nav.side-bar .manager span {
 
 /* Section--Personal data ************************************************************/
 .personal-data {
+  display: none;
   background: #ffffff;
   box-shadow: 1px 1px 5px #d4d4d4;
 }
@@ -2274,6 +2326,7 @@ nav.side-bar .manager span {
 
 /* Section--Postback **************************************************/
 .postback {
+  display: none;
   background: #ffffff;
   box-shadow: 1px 1px 5px #d4d4d4;
 }
@@ -2487,7 +2540,6 @@ nav.side-bar .manager span {
   cursor: pointer;
 }
 
-/* Custom styles */
 /* Header.topbar *****************************************/
 @media (max-width: 970px) {
   header.top-bar {

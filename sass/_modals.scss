@@ -183,6 +183,7 @@
                     border-radius: 3px;
                 }
             }
+
             .button {
                 text-align: center;
                 color: #ffffff;
@@ -195,7 +196,7 @@
                 background: #f58220;
                 border-radius: 3px;
                 transition: all 0.3s;
-    
+
                 &:hover {
                     background: darken(#f58220, 7%);
                     cursor: pointer;
@@ -364,16 +365,33 @@
         max-width: 900px;
         background: #ffffff;
 
-        h1 {
-            display: block;
-            padding: 5px 15px 10px 10px;
-            color: #a6a6a6;
-            font-family: Roboto;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 42px;
-            text-transform: uppercase;
-            border-bottom: 1px solid #e3e3e3;
+        .header {
+            position: relative;
+            h1 {
+                display: block;
+                padding: 5px 15px 10px 10px;
+                color: #a6a6a6;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 42px;
+                text-transform: uppercase;
+                border-bottom: 1px solid #e3e3e3;
+            }
+    
+            svg {
+                position: absolute;
+                right: 40px;
+                top: 16px;
+                width: 18px;
+                height: 18px;
+                fill: #a6a6a6;
+    
+                &:hover {
+                    fill: #f58220;
+                    cursor: pointer;
+                }
+            }
         }
 
         .select-inputs,
@@ -411,6 +429,18 @@
                     font-family: Roboto;
                     font-size: 16px;
                     color: #808080;
+
+                    svg {
+                        width: 20px;
+                        height: 15px;
+                        position: absolute;
+                        left: 5px;
+                        top: 5px;
+                    }
+                }
+
+                select.languages {
+                    padding-left: 60px;
                 }
 
                 .input {
@@ -454,6 +484,7 @@
                 flex-basis: 50%;
                 height: 250px;
                 overflow: auto;
+
                 h2 {
                     color: #808080;
                     font-family: Roboto;
@@ -477,6 +508,7 @@
                     border-top: 1px solid #e3e3e3;
                     border-bottom: 1px solid #e3e3e3;
                 }
+
                 .box-items {
                     li {
                         flex-basis: 33.33334%;
@@ -484,36 +516,44 @@
                         align-items: center;
                         margin: 5px 0;
                         transition: all 0.3s;
+
                         label {
                             font-family: Roboto;
                             font-size: 15px;
                         }
+
                         input {
                             margin: 10px 20px 10px 20px;
                             font-family: Roboto;
                         }
+
                         &:hover {
                             background: #f4f4f4;
                             cursor: pointer;
                         }
+
                         &:hover a svg {
                             opacity: 1;
                         }
+
                         a {
                             margin-left: auto;
                             margin-right: 10px;
+
                             svg {
                                 opacity: 0;
                                 fill: #808080;
                                 width: 15px;
                                 height: 15px;
                                 transition: all 0.3s;
+
                                 &:hover {
                                     fill: #f58220;
                                 }
                             }
                         }
                     }
+
                     input {
                         margin-right: 12px;
                         margin-bottom: 15px;
@@ -523,11 +563,13 @@
                 }
             }
         }
+
         .link-box {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             padding-bottom: 20px;
+
             input {
                 width: 60%;
                 color: #808080;
@@ -537,6 +579,7 @@
                 outline-color: #f58220;
                 padding-left: 5px;
             }
+
             .button.gray {
                 text-align: center;
                 color: #ffffff;
@@ -551,7 +594,7 @@
                 transition: all 0.3s;
                 display: flex;
                 align-items: center;
-        
+
                 &:hover {
                     background: #f58220;
                     cursor: pointer;
@@ -564,6 +607,7 @@
                     margin-right: 5px;
                 }
             }
+
             .button:last-child {
                 text-align: center;
                 color: #ffffff;
@@ -576,7 +620,7 @@
                 display: inline-block;
                 border-radius: 3px;
                 transition: all 0.3s;
-        
+
                 &:hover {
                     background: darken(#f58220, 7%);
                     cursor: pointer;
@@ -589,7 +633,7 @@
 /* Add links *****************************************/
 
 .add-links {
-    display: none;
+    // display: none;
     position: absolute;
     left: 0;
     top: 0;
@@ -607,17 +651,33 @@
         max-width: 900px;
         background: #ffffff;
 
-        h1 {
-            display: block;
-            padding: 5px 15px 10px 10px;
-            color: #a6a6a6;
-            font-family: Roboto;
-            font-size: 16px;
-            font-weight: 700;
-            line-height: 42px;
-            text-transform: uppercase;
-            border-bottom: 1px solid #e3e3e3;
+            position: absolute;
+            h1 {
+                display: block;
+                padding: 5px 15px 10px 10px;
+                color: #a6a6a6;
+                font-family: Roboto;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 42px;
+                text-transform: uppercase;
+                border-bottom: 1px solid #e3e3e3;
+            }
+            svg#closeLinks {
+                position: absolute;
+                right: 40px;
+                top: 27px;
+                width: 18px;
+                height: 18px;
+                fill: #a6a6a6;
+    
+                &:hover {
+                    fill: #f58220;
+                    cursor: pointer;
+                }
         }
+
+        
 
         .select-inputs {
             display: flex;
@@ -654,6 +714,7 @@
                     font-size: 16px;
                     color: #808080;
                 }
+
                 select.languages {
                     padding-left: 60px;
                 }
@@ -690,6 +751,7 @@
             border-top: 1px solid #e3e3e3;
             border-bottom: 1px solid #e3e3e3;
             margin: 20px auto;
+
             h2 {
                 flex-basis: 100%;
                 color: #808080;
@@ -705,57 +767,68 @@
 
             .box {
                 height: 250px;
+
                 .box-items {
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
                     flex-wrap: wrap;
                     overflow: auto;
+
                     li {
                         flex-basis: 33.33334%;
                         display: flex;
                         align-items: center;
                         margin: 5px 0;
                         transition: all 0.3s;
+
                         label {
                             font-family: Roboto;
                             font-size: 15px;
                         }
+
                         input {
                             margin: 10px 20px 10px 20px;
                             font-family: Roboto;
                         }
+
                         &:hover {
                             background: #f4f4f4;
                             cursor: pointer;
                         }
+
                         &:hover a svg {
                             opacity: 1;
                         }
+
                         a {
                             margin-left: auto;
                             margin-right: 10px;
+
                             svg {
                                 opacity: 0;
                                 fill: #808080;
                                 width: 15px;
                                 height: 15px;
                                 transition: all 0.3s;
+
                                 &:hover {
                                     fill: #f58220;
                                 }
                             }
                         }
                     }
-                    
+
                 }
             }
         }
+
         .link-box {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             padding-bottom: 20px;
+
             input {
                 width: 60%;
                 color: #808080;
@@ -765,6 +838,7 @@
                 outline-color: #f58220;
                 padding-left: 5px;
             }
+
             .button.gray {
                 text-align: center;
                 color: #ffffff;
@@ -779,7 +853,7 @@
                 transition: all 0.3s;
                 display: flex;
                 align-items: center;
-        
+
                 &:hover {
                     background: #f58220;
                     cursor: pointer;
@@ -792,6 +866,7 @@
                     margin-right: 5px;
                 }
             }
+
             .button:last-child {
                 text-align: center;
                 color: #ffffff;
@@ -804,7 +879,7 @@
                 display: inline-block;
                 border-radius: 3px;
                 transition: all 0.3s;
-        
+
                 &:hover {
                     background: darken(#f58220, 7%);
                     cursor: pointer;
