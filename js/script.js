@@ -1,11 +1,20 @@
-'use strict' 
+'use strict'
 
 /* Hamburger menu */
 
-$(document).ready(function(){
-    $('#hamburgerMenu').click(function(){
+$(document).ready(function () {
+    $('#hamburgerMenu').click(function () {
         $('.side-bar').toggleClass('toggle');
     })
+})
+
+/* Sidebar - active class toggle */
+
+$('.menu-to-hide li').click(function () {
+    $('.menu-to-hide li a').removeClass('active');
+    $('.menu-to-hide li svg').removeClass('active');
+    $(this).find('a').addClass('active');
+    $(this).find('svg').addClass('active');
 })
 
 /* HTML References */
@@ -38,6 +47,7 @@ var addLinkTwo = document.querySelector('#addLinkTwo');
 var addBannerOne = document.querySelector('#addBannerOne');
 var addBannerTwo = document.querySelector('#addBannerTwo');
 var logoutBtn = document.querySelector('#logout');
+var logoutSideBar = document.querySelector('#logoutSideBar');
 var quitBtn = document.querySelector('#quitBtn');
 var enterBtn = document.querySelector('#enterBtn');
 var cancelBtn = document.querySelector('#cancelBtn');
@@ -47,58 +57,62 @@ var closeMsgBox = document.querySelector('#closeMsgBox');
 
 /* EventListeners for displaying sections and modals */
 
-manager.addEventListener('click', function(){
+manager.addEventListener('click', function () {
     messageBoxModal.style.display = 'block';
 });
 
-addLinkOne.addEventListener('click', function(){
+addLinkOne.addEventListener('click', function () {
     addLinksModal.style.display = 'block';
 });
 
-addLinkTwo.addEventListener('click', function(){
+addLinkTwo.addEventListener('click', function () {
     addLinksModal.style.display = 'block';
 });
 
-addBannerOne.addEventListener('click', function(){
+addBannerOne.addEventListener('click', function () {
     addBannersModal.style.display = 'block';
 });
 
-addBannerTwo.addEventListener('click', function(){
+addBannerTwo.addEventListener('click', function () {
     addBannersModal.style.display = 'block';
 });
 
-logoutBtn.addEventListener('click', function(){
+logoutBtn.addEventListener('click', function () {
     logoutModal.style.display = 'block';
 });
 
-enterBtn.addEventListener('click', function(){
+enterBtn.addEventListener('click', function () {
     loginModal.style.display = 'none';
 });
 
-quitBtn.addEventListener('click', function(){
+quitBtn.addEventListener('click', function () {
     logoutModal.style.display = 'none';
     loginModal.style.display = 'block';
 });
 
-cancelBtn.addEventListener('click', function(){
+logoutSideBar.addEventListener('click', function(){
+    logoutModal.style.display = 'block';
+});
+
+cancelBtn.addEventListener('click', function () {
     logoutModal.style.display = 'none';
 });
 
-closeBanners.addEventListener('click', function(){
+closeBanners.addEventListener('click', function () {
     addBannersModal.style.display = 'none';
 });
 
-closeLinks.addEventListener('click', function(){
+closeLinks.addEventListener('click', function () {
     addLinksModal.style.display = 'none';
 });
 
-closeMsgBox.addEventListener('click', function(){
+closeMsgBox.addEventListener('click', function () {
     messageBoxModal.style.display = 'none';
 });
 
 
 
-generalSection.addEventListener('click', function() {
+generalSection.addEventListener('click', function () {
     general.style.display = 'block';
     links.style.display = 'block';
     details.style.display = 'none';
@@ -108,7 +122,7 @@ generalSection.addEventListener('click', function() {
     postback.style.display = 'none';
 });
 
-linksSection.addEventListener('click', function() {
+linksSection.addEventListener('click', function () {
     general.style.display = 'none';
     links.style.display = 'block';
     details.style.display = 'none';
@@ -118,7 +132,7 @@ linksSection.addEventListener('click', function() {
     postback.style.display = 'none';
 });
 
-detailsSection.addEventListener('click', function() {
+detailsSection.addEventListener('click', function () {
     general.style.display = 'none';
     links.style.display = 'none';
     details.style.display = 'block';
@@ -128,7 +142,7 @@ detailsSection.addEventListener('click', function() {
     postback.style.display = 'none';
 });
 
-bannersSection.addEventListener('click', function() {
+bannersSection.addEventListener('click', function () {
     general.style.display = 'none';
     links.style.display = 'none';
     details.style.display = 'none';
@@ -138,7 +152,7 @@ bannersSection.addEventListener('click', function() {
     postback.style.display = 'none';
 });
 
-personalDataSection.addEventListener('click', function() {
+personalDataSection.addEventListener('click', function () {
     general.style.display = 'none';
     links.style.display = 'none';
     details.style.display = 'none';
@@ -148,7 +162,7 @@ personalDataSection.addEventListener('click', function() {
     postback.style.display = 'none';
 });
 
-payoutSection.addEventListener('click', function() {
+payoutSection.addEventListener('click', function () {
     general.style.display = 'none';
     links.style.display = 'none';
     details.style.display = 'none';
@@ -158,7 +172,7 @@ payoutSection.addEventListener('click', function() {
     postback.style.display = 'none';
 });
 
-postbackSection.addEventListener('click', function() {
+postbackSection.addEventListener('click', function () {
     general.style.display = 'none';
     links.style.display = 'none';
     details.style.display = 'none';
@@ -167,4 +181,3 @@ postbackSection.addEventListener('click', function() {
     payout.style.display = 'none';
     postback.style.display = 'block';
 });
-

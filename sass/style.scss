@@ -24,6 +24,13 @@ a {
     text-decoration: none;
 }
 
+.active {
+    color: $white;
+    background: $dark-2;
+    border-left: 5px solid $main-orange;
+    padding: 5px 0;
+}
+
 input,
 select,
 option,
@@ -139,6 +146,13 @@ nav.side-bar {
         border-top: 1px solid $dark-gray;
         padding-top: 15px;
         display: none;
+
+        svg {
+            fill: $white;
+            margin-left: 25px;
+            width: 16px;
+            height: 16px;
+        }
     }
 
     ul li {
@@ -177,9 +191,10 @@ nav.side-bar {
 
         a.active {
             color: $white;
-            background: #282828;
+            background: $dark-2;
             border-left: 5px solid $main-orange;
             padding: 5px 0;
+            margin-left: 25px;
         }
 
         svg.active {
@@ -188,7 +203,7 @@ nav.side-bar {
         }
 
         &:hover {
-            background: #282828;
+            background: $dark-2;
         }
 
         &:hover svg,
@@ -298,7 +313,6 @@ nav.side-bar {
 
             #right {
                 border-left: 1px solid $border-color;
-                // padding-left: 10px;
                 color: $dark-gray;
                 font-family: $main-font;
                 font-size: 14px;
