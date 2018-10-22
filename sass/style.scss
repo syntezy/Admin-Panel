@@ -11,7 +11,7 @@
 }
 
 body {
-    background: #f4f4f4;
+    background: $subtle-white;
 }
 
 ul {
@@ -24,8 +24,11 @@ a {
     text-decoration: none;
 }
 
-input, select, option, textarea {
-    border: 1px solid #e3e3e3;
+input,
+select,
+option,
+textarea {
+    border: 1px solid $border-color;
     border-radius: 3px;
 }
 
@@ -44,10 +47,10 @@ header.top-bar {
     top: 0;
     right: 0;
     height: 80px;
-    background: #ffffff;
+    background: $white;
     width: calc(100vw - 200px);
     z-index: 20;
-    border-bottom: 1px solid #e3e3e3;
+    border-bottom: 1px solid $border-color;
 
     ul {
         display: flex;
@@ -59,12 +62,12 @@ header.top-bar {
             display: flex;
             align-items: center;
             position: relative;
-            transition: all 0.3s;
+            transition: all $transition-time;
             height: 80px;
 
             &:hover {
                 cursor: pointer;
-                background: #f4f4f4;
+                background: $subtle-white;
             }
 
             &::before {
@@ -72,13 +75,13 @@ header.top-bar {
                 content: '';
                 width: 1px;
                 height: 80px;
-                background: #f4f4f4;
+                background: $subtle-white;
                 left: 0;
                 top: 0;
             }
 
             a {
-                color: #56819f;
+                color: $link-blue;
                 display: flex;
                 align-items: center;
 
@@ -88,19 +91,17 @@ header.top-bar {
                 }
 
                 #value {
-                    color: #9c9c9c;
-                    font-family: Roboto;
+                    color: $subtle-gray;
+                    font-family: $main-font;
                     font-size: 20px;
                     font-weight: 700;
-                    // line-height: 42px;
                 }
 
                 #person {
-                    color: #56819f;
-                    font-family: Roboto;
+                    color: $link-blue;
+                    font-family: $main-font;
                     font-size: 13px;
                     font-weight: 300;
-                    // line-height: 42px;
                 }
             }
 
@@ -110,7 +111,7 @@ header.top-bar {
                 &::before {
                     content: '';
                     position: absolute;
-                    background: #f58220;
+                    background: $main-orange;
                     width: 10px;
                     height: 10px;
                     border-radius: 50%;
@@ -135,7 +136,7 @@ nav.side-bar {
 
     ul#topbar-to-sidebar {
         margin-top: 40px;
-        border-top: 1px solid #333333;
+        border-top: 1px solid $dark-gray;
         padding-top: 15px;
         display: none;
     }
@@ -144,18 +145,18 @@ nav.side-bar {
         display: flex;
         align-items: center;
         color: #999999;
-        font-family: Roboto;
+        font-family: $main-font;
         font-size: 14px;
         font-weight: 300;
         line-height: 42px;
-        transition: all 0.3s;
+        transition: all $transition-time;
 
         a {
-            color: #818181;
+            color: $gray;
             padding: 5px 0;
             width: 100%;
             border-left: 5px solid #1b1b1b;
-            transition: all 0.3s;
+            transition: all $transition-time;
 
             svg {
                 margin-right: 20px;
@@ -163,26 +164,26 @@ nav.side-bar {
                 transform: translateY(2px);
                 width: 16px;
                 height: 16px;
-                fill: #818181;
-                transition: all 0.3s;
+                fill: $gray;
+                transition: all $transition-time;
             }
 
             img {
                 margin-left: 20px;
                 margin-right: 20px;
-                transition: all 0.3s;
+                transition: all $transition-time;
             }
         }
 
         a.active {
-            color: #ffffff;
+            color: $white;
             background: #282828;
-            border-left: 5px solid #f58220;
+            border-left: 5px solid $main-orange;
             padding: 5px 0;
         }
 
         svg.active {
-            fill: #ffffff;
+            fill: $white;
             margin-left: 25px;
         }
 
@@ -192,9 +193,9 @@ nav.side-bar {
 
         &:hover svg,
         &:hover a {
-            fill: #ffffff;
-            color: #ffffff;
-            border-left-color: #f58220;
+            fill: $white;
+            color: $white;
+            border-left-color: $main-orange;
         }
 
         &:hover svg,
@@ -204,15 +205,15 @@ nav.side-bar {
     }
 
     h2 {
-        color: #808080;
-        font-family: Roboto;
+        color: $gray;
+        font-family: $main-font;
         font-size: 14px;
         font-weight: 700;
         line-height: 42px;
         text-transform: uppercase;
         letter-spacing: -0.28px;
         padding: 20px 60px 5px 20px;
-        border-top: 1px solid #333333;
+        border-top: 1px solid $dark-gray;
     }
 
     .manager {
@@ -220,6 +221,7 @@ nav.side-bar {
         justify-content: space-evenly;
         align-items: center;
         position: relative;
+
         &:hover {
             cursor: pointer;
         }
@@ -236,8 +238,8 @@ nav.side-bar {
         }
 
         span {
-            color: #56819f;
-            font-family: Roboto;
+            color: $link-blue;
+            font-family: $main-font;
             font-size: 14px;
             font-weight: 300;
             line-height: 42px;
@@ -259,15 +261,15 @@ nav.side-bar {
 /* Section--Main ******************************************************************/
 
 .main {
-    background: #ffffff;
-    box-shadow: 1px 1px 5px #d4d4d4;
+    background: $white;
+    box-shadow: 1px 1px 5px $grayish;
     margin-bottom: 35px;
 
     h1 {
         display: block;
         padding: 20px 15px 10px 10px;
-        color: #a6a6a6;
-        font-family: Roboto;
+        color: $subtle-gray;
+        font-family: $main-font;
         font-size: 16px;
         font-weight: 700;
         line-height: 42px;
@@ -276,8 +278,8 @@ nav.side-bar {
 
     .calendar {
         text-align: center;
-        border-top: 1px solid #e3e3e3;
-        border-bottom: 1px solid #e3e3e3;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
         padding: 30px 0;
         display: flex;
         justify-content: center;
@@ -286,7 +288,7 @@ nav.side-bar {
         .rectangle {
             display: inline-block;
             padding: 5px 20px;
-            border: 1px solid #e3e3e3;
+            border: 1px solid $border-color;
             border-radius: 3px;
 
             input[type=date] {
@@ -295,10 +297,10 @@ nav.side-bar {
             }
 
             #right {
-                border-left: 1px solid #e3e3e3;
+                border-left: 1px solid $border-color;
                 // padding-left: 10px;
-                color: #333333;
-                font-family: Roboto;
+                color: $dark-gray;
+                font-family: $main-font;
                 font-size: 14px;
                 font-weight: 300;
                 padding: 10px;
@@ -306,8 +308,8 @@ nav.side-bar {
 
             #left {
                 padding: 10px 50px 10px 10px;
-                color: #333333;
-                font-family: Roboto;
+                color: $dark-gray;
+                font-family: $main-font;
                 font-size: 14px;
                 font-weight: 300;
             }
@@ -318,15 +320,15 @@ nav.side-bar {
         }
 
         .arrow {
-            background: #f58220;
+            background: $main-orange;
             display: inline-block;
             padding: 16px 17px;
             border-radius: 3px;
             margin-left: 10px;
-            transition: all 0.3s;
+            transition: all $transition-time;
 
             &:hover {
-                background: darken(#f58220, 7%);
+                background: darken($main-orange, 7%);
                 cursor: pointer;
             }
         }
@@ -354,20 +356,20 @@ nav.side-bar {
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                border-bottom: 1px solid #e3e3e3;
+                border-bottom: 1px solid $border-color;
 
                 h2 {
                     margin-right: 200px;
-                    color: #a6a6a6;
-                    font-family: Roboto;
+                    color: $subtle-gray;
+                    font-family: $main-font;
                     font-size: 16px;
                     font-weight: 700;
                     line-height: 42px;
                 }
 
                 span {
-                    color: #333333;
-                    font-family: Roboto;
+                    color: $dark-gray;
+                    font-family: $main-font;
                     font-size: 16px;
                     font-weight: 300;
                     line-height: 42px;
@@ -380,8 +382,8 @@ nav.side-bar {
         padding-bottom: 60px;
 
         h2 {
-            color: #a6a6a6;
-            font-family: Roboto;
+            color: $subtle-gray;
+            font-family: $main-font;
             font-size: 16px;
             font-weight: 700;
             line-height: 42px;
@@ -403,39 +405,39 @@ nav.side-bar {
 
 .links {
     display: none;
-    background: #ffffff;
-    box-shadow: 1px 1px 5px #d4d4d4;
+    background: $white;
+    box-shadow: 1px 1px 5px $grayish;
 
     h1 {
         display: block;
         padding: 20px 15px 10px 10px;
-        color: #a6a6a6;
-        font-family: Roboto;
+        color: $subtle-gray;
+        font-family: $main-font;
         font-size: 16px;
         font-weight: 700;
         line-height: 42px;
         text-transform: uppercase;
-        border-bottom: 1px solid #e3e3e3;
+        border-bottom: 1px solid $border-color;
     }
 
     .button {
         text-align: center;
-        color: #ffffff;
-        font-family: Roboto;
+        color: $white;
+        font-family: $main-font;
         font-size: 18px;
         font-weight: 300;
         line-height: 42px;
         padding: 3px 30px;
         margin: 25px;
-        background: #f58220;
+        background: $main-orange;
         display: inline-block;
         margin-left: 50%;
         transform: translateX(-50%);
         border-radius: 3px;
-        transition: all 0.3s;
+        transition: all $transition-time;
 
         &:hover {
-            background: darken(#f58220, 7%);
+            background: darken($main-orange, 7%);
             cursor: pointer;
         }
     }
@@ -448,15 +450,15 @@ nav.side-bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #e3e3e3;
-            transition: all 0.3s;
+            border-bottom: 1px solid $border-color;
+            transition: all $transition-time;
 
             &:first-child {
-                border-top: 1px solid #e3e3e3;
+                border-top: 1px solid $border-color;
             }
 
             &:hover {
-                background: rgba(177, 191, 191, 0.116);
+                background: $hover;
             }
 
             &:hover .link {
@@ -464,8 +466,8 @@ nav.side-bar {
             }
 
             span {
-                color: #a6a6a6;
-                font-family: Roboto;
+                color: $subtle-gray;
+                font-family: $main-font;
                 font-size: 16px;
                 font-weight: 700;
                 line-height: 17px;
@@ -473,8 +475,8 @@ nav.side-bar {
             }
 
             a {
-                color: #56819f;
-                font-family: Roboto;
+                color: $link-blue;
+                font-family: $main-font;
                 font-size: 16px;
                 font-weight: 300;
                 line-height: 17px;
@@ -498,26 +500,25 @@ nav.side-bar {
             .link {
                 padding: 10px 10px 10px 40px;
                 opacity: 0;
-                transition: all 0.3s;
+                transition: all $transition-time;
                 margin-left: auto;
             }
         }
     }
 }
 
-/* Section--details + Section--Payout ************************************************************/
+/* Section--details ************************************************************/
 
-.details,
-.payout {
+.details {
     display: none;
-    background: #ffffff;
-    box-shadow: 1px 1px 5px #d4d4d4;
+    background: $white;
+    box-shadow: 1px 1px 5px $grayish;
 
     h1 {
         display: block;
         padding: 20px 15px 10px 10px;
-        color: #a6a6a6;
-        font-family: Roboto;
+        color: $subtle-gray;
+        font-family: $main-font;
         font-size: 16px;
         font-weight: 700;
         line-height: 42px;
@@ -526,8 +527,8 @@ nav.side-bar {
 
     .calendar {
         text-align: center;
-        border-top: 1px solid #e3e3e3;
-        border-bottom: 1px solid #e3e3e3;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
         padding: 30px 0;
         display: flex;
         justify-content: center;
@@ -536,7 +537,7 @@ nav.side-bar {
         .rectangle {
             display: inline-block;
             padding: 5px 20px;
-            border: 1px solid #e3e3e3;
+            border: 1px solid $border-color;
             border-radius: 3px;
 
             input[type=date] {
@@ -545,10 +546,9 @@ nav.side-bar {
             }
 
             #right {
-                border-left: 1px solid #e3e3e3;
-                // padding-left: 10px;
-                color: #333333;
-                font-family: Roboto;
+                border-left: 1px solid $border-color;
+                color: $dark-gray;
+                font-family: $main-font;
                 font-size: 14px;
                 font-weight: 300;
                 padding: 10px;
@@ -556,8 +556,8 @@ nav.side-bar {
 
             #left {
                 padding: 10px 50px 10px 10px;
-                color: #333333;
-                font-family: Roboto;
+                color: $dark-gray;
+                font-family: $main-font;
                 font-size: 14px;
                 font-weight: 300;
             }
@@ -568,15 +568,15 @@ nav.side-bar {
         }
 
         .arrow {
-            background: #f58220;
+            background: $main-orange;
             display: inline-block;
             padding: 16px 17px;
             border-radius: 3px;
             margin-left: 10px;
-            transition: all 0.3s;
+            transition: all $transition-time;
 
             &:hover {
-                background: darken(#f58220, 7%);
+                background: darken($main-orange, 7%);
                 cursor: pointer;
             }
         }
@@ -589,44 +589,44 @@ nav.side-bar {
         border-collapse: collapse;
 
         tr {
-            border-left: 3px solid #f4f4f4;
-            border-right: 3px solid #f4f4f4;
-            transition: all 0.3s;
+            border-left: 3px solid $subtle-white;
+            border-right: 3px solid $subtle-white;
+            transition: all $transition-time;
 
             &:nth-last-of-type(even) {
-                background: #f8f8f8;
+                background: $subtle-white-2;
             }
 
             &:hover {
-                background: #f1f1f1;
-                border-left: 3px solid #f58320;
+                background: $white-2;
+                border-left: 3px solid $main-orange;
                 cursor: pointer;
             }
 
             th {
                 padding: 40px 15px 40px 15px;
-                color: #a6a6a6;
-                font-family: Roboto;
+                color: $subtle-gray;
+                font-family: $main-font;
                 font-size: 16px;
                 font-weight: 700;
                 line-height: 17px;
-                border-bottom: 1px solid #e3e3e3;
-                transition: all 0.3s;
+                border-bottom: 1px solid $border-color;
+                transition: all $transition-time;
 
                 &:hover {
-                    color: #111;
+                    color: $dark;
                     cursor: pointer;
                 }
             }
 
             td {
                 text-align: center;
-                color: #333333;
-                font-family: Roboto;
+                color: $dark-gray;
+                font-family: $main-font;
                 font-size: 16px;
                 font-weight: 300;
                 line-height: 42px;
-                border-bottom: 1px solid #e3e3e3;
+                border-bottom: 1px solid $border-color;
             }
         }
     }
@@ -645,11 +645,11 @@ nav.side-bar {
             width: 25px;
             height: 25px;
             margin: 0 15px;
-            transition: all 0.3s;
+            transition: all $transition-time;
 
             &:hover {
                 cursor: pointer;
-                fill: #f58220;
+                fill: $main-orange;
             }
         }
 
@@ -661,19 +661,191 @@ nav.side-bar {
             li a {
                 padding: 12px 15px;
                 font-size: 18px;
-                color: #56819f;
-                font-family: Roboto;
-                transition: all 0.3s;
+                color: $link-blue;
+                font-family: $main-font;
+                transition: all $transition-time;
 
                 &:hover {
-                    background: #f4f4f4;
+                    background: $subtle-white;
                 }
             }
 
             li a.activePage {
-                background: #f4f4f4;
+                background: $subtle-white;
                 border-radius: 3px;
-                color: #818181;
+                color: $gray;
+            }
+        }
+    }
+}
+
+/* Section--payout ************************************************************/
+
+.payout {
+    display: none;
+    background: $white;
+    box-shadow: 1px 1px 5px $grayish;
+
+    h1 {
+        display: block;
+        padding: 20px 15px 10px 10px;
+        color: $subtle-gray;
+        font-family: $main-font;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 42px;
+        text-transform: uppercase;
+    }
+
+    .calendar {
+        text-align: center;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        padding: 30px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .rectangle {
+            display: inline-block;
+            padding: 5px 20px;
+            border: 1px solid $border-color;
+            border-radius: 3px;
+
+            input[type=date] {
+                border: none;
+                outline: none;
+            }
+
+            #right {
+                border-left: 1px solid $border-color;
+                color: $dark-gray;
+                font-family: $main-font;
+                font-size: 14px;
+                font-weight: 300;
+                padding: 10px;
+            }
+
+            #left {
+                padding: 10px 50px 10px 10px;
+                color: $dark-gray;
+                font-family: $main-font;
+                font-size: 14px;
+                font-weight: 300;
+            }
+
+            img {
+                margin-left: 33px;
+            }
+        }
+
+        .arrow {
+            background: $main-orange;
+            display: inline-block;
+            padding: 16px 17px;
+            border-radius: 3px;
+            margin-left: 10px;
+            transition: all $transition-time;
+
+            &:hover {
+                background: darken($main-orange, 7%);
+                cursor: pointer;
+            }
+        }
+    }
+
+    table {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-collapse: collapse;
+
+        tr {
+            border-left: 3px solid $subtle-white;
+            border-right: 3px solid $subtle-white;
+            transition: all $transition-time;
+
+            &:nth-last-of-type(even) {
+                background: $subtle-white-2;
+            }
+
+            &:hover {
+                background: $white-2;
+                border-left: 3px solid $main-orange;
+                cursor: pointer;
+            }
+
+            th {
+                padding: 40px 15px 40px 15px;
+                color: $subtle-gray;
+                font-family: $main-font;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 17px;
+                border-bottom: 1px solid $border-color;
+                transition: all $transition-time;
+
+                &:hover {
+                    color: $dark;
+                    cursor: pointer;
+                }
+            }
+
+            td {
+                text-align: center;
+                color: $dark-gray;
+                font-family: $main-font;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 42px;
+                border-bottom: 1px solid $border-color;
+            }
+        }
+    }
+
+    .pagination {
+        margin: 40px 0;
+
+        .numbers {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0 55px 0;
+        }
+
+        svg {
+            width: 25px;
+            height: 25px;
+            margin: 0 15px;
+            transition: all $transition-time;
+
+            &:hover {
+                cursor: pointer;
+                fill: $main-orange;
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li a {
+                padding: 12px 15px;
+                font-size: 18px;
+                color: $link-blue;
+                font-family: $main-font;
+                transition: all $transition-time;
+
+                &:hover {
+                    background: $subtle-white;
+                }
+            }
+
+            li a.activePage {
+                background: $subtle-white;
+                border-radius: 3px;
+                color: $gray;
             }
         }
     }
@@ -683,39 +855,39 @@ nav.side-bar {
 
 .banners {
     display: none;
-    background: #ffffff;
-    box-shadow: 1px 1px 5px #d4d4d4;
+    background: $white;
+    box-shadow: 1px 1px 5px $grayish;
 
     h1 {
         display: block;
         padding: 20px 15px 10px 10px;
-        color: #a6a6a6;
-        font-family: Roboto;
+        color: $subtle-gray;
+        font-family: $main-font;
         font-size: 16px;
         font-weight: 700;
         line-height: 42px;
         text-transform: uppercase;
-        border-bottom: 1px solid #e3e3e3;
+        border-bottom: 1px solid $border-color;
     }
 
     .button {
         text-align: center;
-        color: #ffffff;
-        font-family: Roboto;
+        color: $white;
+        font-family: $main-font;
         font-size: 18px;
         font-weight: 300;
         line-height: 42px;
         padding: 3px 30px;
         margin: 25px;
-        background: #f58220;
+        background: $main-orange;
         display: inline-block;
         margin-left: 50%;
         transform: translateX(-50%);
         border-radius: 3px;
-        transition: all 0.3s;
+        transition: all $transition-time;
 
         &:hover {
-            background: darken(#f58220, 7%);
+            background: darken($main-orange, 7%);
             cursor: pointer;
         }
     }
@@ -728,15 +900,15 @@ nav.side-bar {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 1px solid #e3e3e3;
-            transition: all 0.3s;
+            border-bottom: 1px solid $border-color;
+            transition: all $transition-time;
 
             &:first-child {
-                border-top: 1px solid #e3e3e3;
+                border-top: 1px solid $border-color;
             }
 
             &:hover {
-                background: rgba(177, 191, 191, 0.116);
+                background: $hover;
             }
 
             &:hover .link {
@@ -744,8 +916,8 @@ nav.side-bar {
             }
 
             span {
-                color: #a6a6a6;
-                font-family: Roboto;
+                color: $subtle-gray;
+                font-family: $main-font;
                 font-size: 16px;
                 font-weight: 700;
                 line-height: 17px;
@@ -753,8 +925,8 @@ nav.side-bar {
             }
 
             a {
-                color: #56819f;
-                font-family: Roboto;
+                color: $link-blue;
+                font-family: $main-font;
                 font-size: 16px;
                 font-weight: 300;
                 line-height: 17px;
@@ -778,7 +950,7 @@ nav.side-bar {
             .link {
                 padding: 10px 10px 10px 40px;
                 opacity: 0;
-                transition: all 0.3s;
+                transition: all $transition-time;
                 margin-left: auto;
             }
         }
@@ -789,19 +961,19 @@ nav.side-bar {
 
 .personal-data {
     display: none;
-    background: #ffffff;
-    box-shadow: 1px 1px 5px #d4d4d4;
+    background: $white;
+    box-shadow: 1px 1px 5px $grayish;
 
     h1 {
         display: block;
         padding: 20px 15px 10px 10px;
-        color: #a6a6a6;
-        font-family: Roboto;
+        color: $subtle-gray;
+        font-family: $main-font;
         font-size: 16px;
         font-weight: 700;
         line-height: 42px;
         text-transform: uppercase;
-        border-bottom: 1px solid #e3e3e3;
+        border-bottom: 1px solid $border-color;
     }
 
     .person,
@@ -812,7 +984,7 @@ nav.side-bar {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border-bottom: 1px solid #e3e3e3;
+        border-bottom: 1px solid $border-color;
         padding: 30px;
 
         .name,
@@ -831,8 +1003,8 @@ nav.side-bar {
         }
 
         label {
-            color: #a6a6a6;
-            font-family: Roboto;
+            color: $subtle-gray;
+            font-family: $main-font;
             font-size: 16px;
             font-weight: 700;
             line-height: 17px;
@@ -841,35 +1013,35 @@ nav.side-bar {
         }
 
         input {
-            color: #333333;
-            font-family: Roboto;
+            color: $dark-gray;
+            font-family: $main-font;
             font-size: 16px;
             font-weight: 300;
             line-height: 42px;
             min-width: 250px;
-            outline-color: #f58220;
+            outline-color: $main-orange;
             padding-left: 10px;
         }
     }
 
     .button {
         text-align: center;
-        color: #ffffff;
-        font-family: Roboto;
+        color: $white;
+        font-family: $main-font;
         font-size: 18px;
         font-weight: 300;
         line-height: 42px;
         padding: 3px 30px;
         margin: 25px;
-        background: #f58220;
+        background: $main-orange;
         display: inline-block;
         margin-left: 50%;
         transform: translateX(-50%);
         border-radius: 3px;
-        transition: all 0.3s;
+        transition: all $transition-time;
 
         &:hover {
-            background: darken(#f58220, 7%);
+            background: darken($main-orange, 7%);
             cursor: pointer;
         }
     }
@@ -879,25 +1051,25 @@ nav.side-bar {
 
 .postback {
     display: none;
-    background: #ffffff;
-    box-shadow: 1px 1px 5px #d4d4d4;
+    background: $white;
+    box-shadow: 1px 1px 5px $grayish;
 
     h1 {
         display: block;
         padding: 20px 15px 10px 10px;
-        color: #a6a6a6;
-        font-family: Roboto;
+        color: $subtle-gray;
+        font-family: $main-font;
         font-size: 16px;
         font-weight: 700;
         line-height: 42px;
         text-transform: uppercase;
-        border-bottom: 1px solid #e3e3e3;
+        border-bottom: 1px solid $border-color;
     }
 
     p {
         padding: 20px 15px 10px 10px;
-        color: #333333;
-        font-family: Roboto;
+        color: $dark-gray;
+        font-family: $main-font;
         font-size: 16px;
         font-weight: 300;
         line-height: 42px;
@@ -918,8 +1090,8 @@ nav.side-bar {
 
 
             h2 {
-                color: #808080;
-                font-family: Roboto;
+                color: $gray;
+                font-family: $main-font;
                 font-size: 16px;
                 font-weight: 700;
                 line-height: 42px;
@@ -931,10 +1103,10 @@ nav.side-bar {
                 resize: none;
                 width: 98%;
                 height: 200px;
-                color: #808080;
-                font-family: Roboto;
+                color: $gray;
+                font-family: $main-font;
                 padding: 10px;
-                outline-color: #f58220;
+                outline-color: $main-orange;
             }
         }
 
@@ -954,8 +1126,8 @@ nav.side-bar {
             align-items: flex-start;
 
             h2 {
-                color: #808080;
-                font-family: Roboto;
+                color: $gray;
+                font-family: $main-font;
                 font-size: 16px;
                 font-weight: 700;
                 line-height: 42px;
@@ -968,8 +1140,8 @@ nav.side-bar {
                 margin-left: 10px;
                 padding: 12px 10px;
                 width: 90%;
-                outline-color: #f58220;
-                font-family: Roboto;
+                outline-color: $main-orange;
+                font-family: $main-font;
                 font-size: 16px;
             }
         }
@@ -980,13 +1152,13 @@ nav.side-bar {
         justify-content: center;
         align-items: center;
         width: 100%;
-        border-top: 1px solid #e3e3e3;
-        border-bottom: 1px solid #e3e3e3;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
         margin-top: 50px;
 
         h2 {
-            color: #808080;
-            font-family: Roboto;
+            color: $gray;
+            font-family: $main-font;
             font-size: 16px;
             font-weight: 700;
             text-transform: uppercase;
@@ -999,14 +1171,14 @@ nav.side-bar {
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            border-right: 1px solid #e3e3e3;
+            border-right: 1px solid $border-color;
             flex-basis: 50%;
             padding: 10px;
             height: 250px;
             overflow-y: scroll;
 
             h2 span {
-                color: #ff0000;
+                color: $red;
             }
 
             .statuses-box {
@@ -1017,7 +1189,7 @@ nav.side-bar {
                 }
 
                 label {
-                    font-family: Roboto;
+                    font-family: $main-font;
                     font-size: 16px;
                 }
             }
@@ -1028,13 +1200,30 @@ nav.side-bar {
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
+            position: relative;
             flex-basis: 50%;
             padding: 10px;
             height: 300px;
+
             input {
                 width: 96%;
                 margin-left: 2%;
                 margin-top: 50px;
+            }
+
+            .values {
+                max-width: 750px;
+                padding: 10px;
+                width: 100%;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 55%;
+                display: flex;
+                justify-content: space-between;
+                font-family: $main-font;
+                font-size: 16px;
+                color: $subtle-gray;
             }
         }
     }
@@ -1045,19 +1234,19 @@ nav.side-bar {
         align-items: center;
 
         span {
-            color: #ffffff;
-            font-family: Roboto;
+            color: $white;
+            font-family: $main-font;
             font-size: 18px;
             font-weight: 300;
             line-height: 42px;
             padding: 3px 30px;
             margin: 25px;
-            background: #f58220;
+            background: $main-orange;
             border-radius: 3px;
-            transition: all 0.3s;
+            transition: all $transition-time;
 
             &:hover {
-                background: darken(#f58220, 7%);
+                background: darken($main-orange, 7%);
                 cursor: pointer;
             }
         }

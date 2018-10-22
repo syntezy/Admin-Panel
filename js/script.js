@@ -40,13 +40,48 @@ var addBannerTwo = document.querySelector('#addBannerTwo');
 var logoutBtn = document.querySelector('#logout');
 var quitBtn = document.querySelector('#quitBtn');
 var enterBtn = document.querySelector('#enterBtn');
+var cancelBtn = document.querySelector('#cancelBtn');
 var closeBanners = document.querySelector('#closeBanners');
 var closeLinks = document.querySelector('#closeLinks');
+var closeMsgBox = document.querySelector('#closeMsgBox');
 
 /* EventListeners for displaying sections and modals */
 
 manager.addEventListener('click', function(){
     messageBoxModal.style.display = 'block';
+});
+
+addLinkOne.addEventListener('click', function(){
+    addLinksModal.style.display = 'block';
+});
+
+addLinkTwo.addEventListener('click', function(){
+    addLinksModal.style.display = 'block';
+});
+
+addBannerOne.addEventListener('click', function(){
+    addBannersModal.style.display = 'block';
+});
+
+addBannerTwo.addEventListener('click', function(){
+    addBannersModal.style.display = 'block';
+});
+
+logoutBtn.addEventListener('click', function(){
+    logoutModal.style.display = 'block';
+});
+
+enterBtn.addEventListener('click', function(){
+    loginModal.style.display = 'none';
+});
+
+quitBtn.addEventListener('click', function(){
+    logoutModal.style.display = 'none';
+    loginModal.style.display = 'block';
+});
+
+cancelBtn.addEventListener('click', function(){
+    logoutModal.style.display = 'none';
 });
 
 closeBanners.addEventListener('click', function(){
@@ -56,6 +91,12 @@ closeBanners.addEventListener('click', function(){
 closeLinks.addEventListener('click', function(){
     addLinksModal.style.display = 'none';
 });
+
+closeMsgBox.addEventListener('click', function(){
+    messageBoxModal.style.display = 'none';
+});
+
+
 
 generalSection.addEventListener('click', function() {
     general.style.display = 'block';

@@ -1006,6 +1006,7 @@ template {
 
 /* Add links *****************************************/
 .add-links {
+  display: none;
   position: absolute;
   left: 0;
   top: 0;
@@ -1283,7 +1284,10 @@ a {
   text-decoration: none;
 }
 
-input, select, option, textarea {
+input,
+select,
+option,
+textarea {
   border: 1px solid #e3e3e3;
   border-radius: 3px;
 }
@@ -1755,15 +1759,184 @@ nav.side-bar .manager span {
   margin-left: auto;
 }
 
-/* Section--details + Section--Payout ************************************************************/
-.details,
+/* Section--details ************************************************************/
+.details {
+  display: none;
+  background: #ffffff;
+  box-shadow: 1px 1px 5px #d4d4d4;
+}
+
+.details h1 {
+  display: block;
+  padding: 20px 15px 10px 10px;
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.details .calendar {
+  text-align: center;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details .calendar .rectangle {
+  display: inline-block;
+  padding: 5px 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 3px;
+}
+
+.details .calendar .rectangle input[type=date] {
+  border: none;
+  outline: none;
+}
+
+.details .calendar .rectangle #right {
+  border-left: 1px solid #e3e3e3;
+  color: #333333;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px;
+}
+
+.details .calendar .rectangle #left {
+  padding: 10px 50px 10px 10px;
+  color: #333333;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.details .calendar .rectangle img {
+  margin-left: 33px;
+}
+
+.details .calendar .arrow {
+  background: #f58220;
+  display: inline-block;
+  padding: 16px 17px;
+  border-radius: 3px;
+  margin-left: 10px;
+  transition: all 0.3s;
+}
+
+.details .calendar .arrow:hover {
+  background: #e7700a;
+  cursor: pointer;
+}
+
+.details table {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.details table tr {
+  border-left: 3px solid #f4f4f4;
+  border-right: 3px solid #f4f4f4;
+  transition: all 0.3s;
+}
+
+.details table tr:nth-last-of-type(even) {
+  background: #f8f8f8;
+}
+
+.details table tr:hover {
+  background: #f1f1f1;
+  border-left: 3px solid #f58320;
+  cursor: pointer;
+}
+
+.details table tr th {
+  padding: 40px 15px 40px 15px;
+  color: #a6a6a6;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  border-bottom: 1px solid #e3e3e3;
+  transition: all 0.3s;
+}
+
+.details table tr th:hover {
+  color: #111;
+  cursor: pointer;
+}
+
+.details table tr td {
+  text-align: center;
+  color: #333333;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 42px;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.details .pagination {
+  margin: 40px 0;
+}
+
+.details .pagination .numbers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 55px 0;
+}
+
+.details .pagination svg {
+  width: 25px;
+  height: 25px;
+  margin: 0 15px;
+  transition: all 0.3s;
+}
+
+.details .pagination svg:hover {
+  cursor: pointer;
+  fill: #f58220;
+}
+
+.details .pagination ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details .pagination ul li a {
+  padding: 12px 15px;
+  font-size: 18px;
+  color: #56819f;
+  font-family: Roboto;
+  transition: all 0.3s;
+}
+
+.details .pagination ul li a:hover {
+  background: #f4f4f4;
+}
+
+.details .pagination ul li a.activePage {
+  background: #f4f4f4;
+  border-radius: 3px;
+  color: #818181;
+}
+
+/* Section--payout ************************************************************/
 .payout {
   display: none;
   background: #ffffff;
   box-shadow: 1px 1px 5px #d4d4d4;
 }
 
-.details h1,
 .payout h1 {
   display: block;
   padding: 20px 15px 10px 10px;
@@ -1775,7 +1948,6 @@ nav.side-bar .manager span {
   text-transform: uppercase;
 }
 
-.details .calendar,
 .payout .calendar {
   text-align: center;
   border-top: 1px solid #e3e3e3;
@@ -1786,7 +1958,6 @@ nav.side-bar .manager span {
   align-items: center;
 }
 
-.details .calendar .rectangle,
 .payout .calendar .rectangle {
   display: inline-block;
   padding: 5px 20px;
@@ -1794,13 +1965,11 @@ nav.side-bar .manager span {
   border-radius: 3px;
 }
 
-.details .calendar .rectangle input[type=date],
 .payout .calendar .rectangle input[type=date] {
   border: none;
   outline: none;
 }
 
-.details .calendar .rectangle #right,
 .payout .calendar .rectangle #right {
   border-left: 1px solid #e3e3e3;
   color: #333333;
@@ -1810,7 +1979,6 @@ nav.side-bar .manager span {
   padding: 10px;
 }
 
-.details .calendar .rectangle #left,
 .payout .calendar .rectangle #left {
   padding: 10px 50px 10px 10px;
   color: #333333;
@@ -1819,12 +1987,10 @@ nav.side-bar .manager span {
   font-weight: 300;
 }
 
-.details .calendar .rectangle img,
 .payout .calendar .rectangle img {
   margin-left: 33px;
 }
 
-.details .calendar .arrow,
 .payout .calendar .arrow {
   background: #f58220;
   display: inline-block;
@@ -1834,13 +2000,11 @@ nav.side-bar .manager span {
   transition: all 0.3s;
 }
 
-.details .calendar .arrow:hover,
 .payout .calendar .arrow:hover {
   background: #e7700a;
   cursor: pointer;
 }
 
-.details table,
 .payout table {
   justify-content: center;
   align-items: center;
@@ -1848,26 +2012,22 @@ nav.side-bar .manager span {
   border-collapse: collapse;
 }
 
-.details table tr,
 .payout table tr {
   border-left: 3px solid #f4f4f4;
   border-right: 3px solid #f4f4f4;
   transition: all 0.3s;
 }
 
-.details table tr:nth-last-of-type(even),
 .payout table tr:nth-last-of-type(even) {
   background: #f8f8f8;
 }
 
-.details table tr:hover,
 .payout table tr:hover {
   background: #f1f1f1;
   border-left: 3px solid #f58320;
   cursor: pointer;
 }
 
-.details table tr th,
 .payout table tr th {
   padding: 40px 15px 40px 15px;
   color: #a6a6a6;
@@ -1879,13 +2039,11 @@ nav.side-bar .manager span {
   transition: all 0.3s;
 }
 
-.details table tr th:hover,
 .payout table tr th:hover {
   color: #111;
   cursor: pointer;
 }
 
-.details table tr td,
 .payout table tr td {
   text-align: center;
   color: #333333;
@@ -1896,12 +2054,10 @@ nav.side-bar .manager span {
   border-bottom: 1px solid #e3e3e3;
 }
 
-.details .pagination,
 .payout .pagination {
   margin: 40px 0;
 }
 
-.details .pagination .numbers,
 .payout .pagination .numbers {
   display: flex;
   justify-content: center;
@@ -1909,7 +2065,6 @@ nav.side-bar .manager span {
   padding: 20px 0 55px 0;
 }
 
-.details .pagination svg,
 .payout .pagination svg {
   width: 25px;
   height: 25px;
@@ -1917,20 +2072,17 @@ nav.side-bar .manager span {
   transition: all 0.3s;
 }
 
-.details .pagination svg:hover,
 .payout .pagination svg:hover {
   cursor: pointer;
   fill: #f58220;
 }
 
-.details .pagination ul,
 .payout .pagination ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.details .pagination ul li a,
 .payout .pagination ul li a {
   padding: 12px 15px;
   font-size: 18px;
@@ -1939,12 +2091,10 @@ nav.side-bar .manager span {
   transition: all 0.3s;
 }
 
-.details .pagination ul li a:hover,
 .payout .pagination ul li a:hover {
   background: #f4f4f4;
 }
 
-.details .pagination ul li a.activePage,
 .payout .pagination ul li a.activePage {
   background: #f4f4f4;
   border-radius: 3px;
@@ -2330,6 +2480,7 @@ nav.side-bar .manager span {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  position: relative;
   flex-basis: 50%;
   padding: 10px;
   height: 300px;
@@ -2339,6 +2490,21 @@ nav.side-bar .manager span {
   width: 96%;
   margin-left: 2%;
   margin-top: 50px;
+}
+
+.postback .info .send-after .values {
+  max-width: 750px;
+  padding: 10px;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 55%;
+  display: flex;
+  justify-content: space-between;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #a6a6a6;
 }
 
 .postback .button {
