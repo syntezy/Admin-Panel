@@ -380,14 +380,14 @@ template {
 
 /* Login *****************************************/
 .login {
-  display: none;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -1000px;
   width: 100%;
   height: 100vh;
   background: rgba(41, 41, 41, 0.698);
   z-index: 9999;
+  transition: all 0.3s;
 }
 
 .login .wrapper {
@@ -475,14 +475,14 @@ template {
 
 /* Message box *****************************************/
 .message-box {
-  display: none;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -1000px;
   width: 100%;
   height: 100vh;
   background: rgba(41, 41, 41, 0.698);
   z-index: 9999;
+  transition: all 0.3s;
 }
 
 .message-box .wrapper {
@@ -641,14 +641,14 @@ template {
 
 /* Logout *****************************************/
 .logout {
-  display: none;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -1000px;
   width: 100%;
   height: 100vh;
   background: rgba(41, 41, 41, 0.698);
   z-index: 9999;
+  transition: all 0.3s;
 }
 
 .logout .wrapper {
@@ -719,14 +719,14 @@ template {
 
 /* Add banners *****************************************/
 .add-banners {
-  display: none;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -1000px;
   width: 100%;
   height: 100vh;
   background: rgba(41, 41, 41, 0.698);
   z-index: 9999;
+  transition: all 0.3s;
 }
 
 .add-banners .wrapper {
@@ -1001,14 +1001,14 @@ template {
 
 /* Add links *****************************************/
 .add-links {
-  display: none;
   position: absolute;
   left: 0;
-  top: 0;
+  top: -1000px;
   width: 100%;
   height: 100vh;
   background: rgba(41, 41, 41, 0.698);
   z-index: 9999;
+  transition: all 0.3s;
 }
 
 .add-links .wrapper {

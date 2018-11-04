@@ -56,55 +56,10 @@ let myChart = new Chart(barChart, {
                 padding: 70,
                 boxWidth: 20
             }
-
         }
     }
 });
 
-// var myChart = document.querySelector('#myChart').getContext('2d');
-
-// Chart.defaults.global.defaultFontFamily = 'Roboto';
-// Chart.defaults.global.defaultFontColor = '#666';
-
-// var massPopChart = new Chart(myChart, {
-//     type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
-//     data: {
-//         labels: ['00', '01', '02', '03', '04', '05', '06', '07', '08', '09', '10'],
-//         datasets: [{
-//             label: 'Signups',
-//             data: [
-//                 174, 600, 199, 462, 510, 287, 94, 474, 312, 290, 583, 444, 184, 226, 499, 108, 574, 284,
-//             ],
-//             //backgroundColor: 'blue'
-//             backgroundColor: [
-//                 '#448fac',
-//                 '#f58220',
-//                 '#448fac',
-//                 '#f58220',
-//                 '#448fac',
-//                 '#f58220',
-//                 '#448fac',
-//                 '#f58220',
-//                 '#448fac',
-//                 '#f58220',
-//                 '#448fac'
-//             ]
-//         }]
-//     },
-//     options: {
-//         labels: {
-//             fontSize: 30,
-//         },
-//         layout: {
-//             padding: {
-//                 left: 50,
-//                 right: 50,
-//                 top: 10,
-//                 bottom: 0
-//             }
-//         }
-//     }
-// });
 
 /* HTML References */
 
@@ -147,64 +102,64 @@ var closeMsgBox = document.querySelector('#closeMsgBox');
 /* EventListeners for displaying sections and modals */
 
 manager.addEventListener('click', function () {
-    messageBoxModal.style.display = 'block';
+    messageBoxModal.style.top = '0';
     messageBoxModal.style.position = 'fixed';
 });
 
 addLinkOne.addEventListener('click', function () {
-    addLinksModal.style.display = 'block';
+    addLinksModal.style.top = '0';
     addLinksModal.style.position = 'fixed';
 });
 
 addLinkTwo.addEventListener('click', function () {
-    addLinksModal.style.display = 'block';
+    addLinksModal.style.top = '0';
     addLinksModal.style.position = 'fixed';
 });
 
 addBannerOne.addEventListener('click', function () {
-    addBannersModal.style.display = 'block';
+    addBannersModal.style.top = '0';
     addBannersModal.style.position = 'fixed';
 });
 
 addBannerTwo.addEventListener('click', function () {
-    addBannersModal.style.display = 'block';
+    addBannersModal.style.top = '0';
     addBannersModal.style.position = 'fixed';
 });
 
 logoutBtn.addEventListener('click', function () {
-    logoutModal.style.display = 'block';
+    logoutModal.style.top = '0';
     logoutModal.style.position = 'fixed';
 });
 
 enterBtn.addEventListener('click', function () {
-    loginModal.style.display = 'none';
+    loginModal.style.top = '-1000px';
 });
 
 quitBtn.addEventListener('click', function () {
-    logoutModal.style.display = 'none';
-    loginModal.style.display = 'block';
+    logoutModal.style.top = '-1000px';
+    loginModal.style.top = '0';
     loginModal.style.position = 'fixed';
 });
 
 logoutSideBar.addEventListener('click', function(){
-    logoutModal.style.display = 'block';
+    logoutModal.style.top = '0';
     logoutModal.style.position = 'fixed';
 });
 
 cancelBtn.addEventListener('click', function () {
-    logoutModal.style.display = 'none';
+    logoutModal.style.top = '-1000px';
 });
 
 closeBanners.addEventListener('click', function () {
-    addBannersModal.style.display = 'none';
+    addBannersModal.style.top = '-1000px';
 });
 
 closeLinks.addEventListener('click', function () {
-    addLinksModal.style.display = 'none';
+    addLinksModal.style.top = '-1000px';
 });
 
 closeMsgBox.addEventListener('click', function () {
-    messageBoxModal.style.display = 'none';
+    messageBoxModal.style.top = '-1000px';
 });
 
 
