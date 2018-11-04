@@ -820,11 +820,6 @@ template {
   top: 5px;
 }
 
-.add-banners .wrapper .select-inputs .box-item select.languages,
-.add-banners .wrapper .select-inputs__second .box-item select.languages {
-  padding-left: 60px;
-}
-
 .add-banners .wrapper .select-inputs .box-item .input,
 .add-banners .wrapper .select-inputs__second .box-item .input {
   font-family: Roboto;
@@ -1089,10 +1084,6 @@ template {
   font-family: Roboto;
   font-size: 16px;
   color: #818181;
-}
-
-.add-links .wrapper .select-inputs .box-item select.languages {
-  padding-left: 60px;
 }
 
 .add-links .wrapper .select-inputs .box-item .input {
@@ -1645,6 +1636,11 @@ nav.side-bar .manager span {
 
 .main .chart {
   padding-bottom: 60px;
+}
+
+.main .chart canvas {
+  max-width: 1350px;
+  margin: 0 auto;
 }
 
 .main .chart h2 {

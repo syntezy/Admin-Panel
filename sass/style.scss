@@ -391,6 +391,10 @@ nav.side-bar {
 
     .chart {
         padding-bottom: 60px;
+        canvas {
+            max-width: 1350px;
+            margin: 0 auto;
+        }
 
         h2 {
             color: $subtle-gray;
