@@ -3,7 +3,6 @@
 @import 'mixins';
 @import 'normalize';
 @import 'modals';
-@import 'inputs';
 
 /* Global + reusable **************************************************/
 * {
@@ -22,13 +21,6 @@ ul {
 
 a {
     text-decoration: none;
-}
-
-.active {
-    color: $white;
-    background: $dark-2;
-    border-left: 5px solid $main-orange;
-    padding: 5px 0;
 }
 
 input,
@@ -146,12 +138,18 @@ nav.side-bar {
         border-top: 1px solid $dark-gray;
         padding-top: 15px;
         display: none;
-
+        li {
+            &:hover svg {
+                margin-left: 30px;
+            }
+        }
         svg {
-            fill: $white;
             margin-left: 25px;
             width: 16px;
             height: 16px;
+            &:hover {
+                fill: $white;
+            }
         }
     }
 
@@ -194,10 +192,9 @@ nav.side-bar {
             background: $dark-2;
             border-left: 5px solid $main-orange;
             padding: 5px 0;
-            margin-left: 25px;
         }
 
-        svg.active {
+        svg.active-2 {
             fill: $white;
             margin-left: 25px;
         }
@@ -213,8 +210,7 @@ nav.side-bar {
             border-left-color: $main-orange;
         }
 
-        &:hover svg,
-        &:hover img {
+        &:hover svg {
             margin-left: 25px;
         }
     }
@@ -276,6 +272,7 @@ nav.side-bar {
 /* Section--Main ******************************************************************/
 
 .main {
+    display: block;
     background: $white;
     box-shadow: 1px 1px 5px $grayish;
     margin-bottom: 35px;
@@ -405,20 +402,13 @@ nav.side-bar {
             margin-bottom: 40px;
         }
 
-        .chart-img {
-            img {
-                display: block;
-                margin: 0 auto;
-                object-fit: cover;
-            }
-        }
     }
 }
 
 /* Section--Links ******************************************************************/
 
 .links {
-    display: none;
+    display: block;
     background: $white;
     box-shadow: 1px 1px 5px $grayish;
 

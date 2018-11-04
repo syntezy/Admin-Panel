@@ -533,10 +533,10 @@ template {
 }
 
 .message-box .wrapper .header svg {
-  width: 14px;
-  height: 14px;
+  width: 18px;
+  height: 18px;
   fill: #a6a6a6;
-  padding: 20px 40px 30px 20px;
+  margin-right: 20px;
 }
 
 .message-box .wrapper .header svg:hover {
@@ -626,7 +626,7 @@ template {
 .message-box .wrapper .box .manager-box .info h2 {
   display: block;
   margin-left: 15px;
-  color: #1a1a1a;
+  color: #111111;
   font-family: Roboto;
   font-size: 22px;
   font-weight: 700;
@@ -642,7 +642,7 @@ template {
   font-family: Roboto;
   padding: 5px 8px;
   font-size: 12px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .message-box .wrapper .box .chat {
@@ -661,7 +661,7 @@ template {
 .message-box .wrapper .box .chat ul li {
   margin: 12px 0;
   padding: 7px 10px;
-  background: #dddddd;
+  background: #d4d4d4;
   border-radius: 3px;
   display: inline-block;
 }
@@ -832,7 +832,7 @@ template {
 
 .add-banners .wrapper .select-inputs .box-item h2,
 .add-banners .wrapper .select-inputs__second .box-item h2 {
-  color: #808080;
+  color: #818181;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
@@ -851,7 +851,7 @@ template {
   outline-color: #f58220;
   font-family: Roboto;
   font-size: 16px;
-  color: #808080;
+  color: #818181;
 }
 
 .add-banners .wrapper .select-inputs .box-item select svg,
@@ -882,7 +882,7 @@ template {
   width: 100%;
   outline-color: #f58220;
   font-family: Roboto;
-  color: #808080;
+  color: #818181;
 }
 
 .add-banners .wrapper .select-inputs .box-item:nth-child(1), .add-banners .wrapper .select-inputs .box-item:nth-child(2) {
@@ -916,7 +916,7 @@ template {
 }
 
 .add-banners .wrapper .checkboxes .box h2 {
-  color: #808080;
+  color: #818181;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
@@ -976,7 +976,7 @@ template {
 
 .add-banners .wrapper .checkboxes .box .box-items li a svg {
   opacity: 0;
-  fill: #808080;
+  fill: #818181;
   width: 15px;
   height: 15px;
   transition: all 0.3s;
@@ -1005,7 +1005,7 @@ template {
 
 .add-banners .wrapper .link-box input {
   width: 60%;
-  color: #808080;
+  color: #818181;
   font-family: Roboto;
   font-size: 16px;
   line-height: 42px;
@@ -1039,7 +1039,7 @@ template {
 .add-banners .wrapper .link-box .button.gray svg {
   height: 20px;
   width: 20px;
-  fill: #808080;
+  fill: #818181;
   margin-right: 5px;
 }
 
@@ -1137,7 +1137,7 @@ template {
 }
 
 .add-links .wrapper .select-inputs .box-item h2 {
-  color: #808080;
+  color: #818181;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
@@ -1155,7 +1155,7 @@ template {
   outline-color: #f58220;
   font-family: Roboto;
   font-size: 16px;
-  color: #808080;
+  color: #818181;
 }
 
 .add-links .wrapper .select-inputs .box-item select.languages {
@@ -1174,7 +1174,7 @@ template {
   width: 100%;
   outline-color: #f58220;
   font-family: Roboto;
-  color: #808080;
+  color: #818181;
 }
 
 .add-links .wrapper .select-inputs .box-item {
@@ -1202,7 +1202,7 @@ template {
 .add-links .wrapper .checkboxes h2 {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  color: #808080;
+  color: #818181;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
@@ -1266,7 +1266,7 @@ template {
 
 .add-links .wrapper .checkboxes .box .box-items li a svg {
   opacity: 0;
-  fill: #808080;
+  fill: #818181;
   width: 15px;
   height: 15px;
   transition: all 0.3s;
@@ -1288,7 +1288,7 @@ template {
 
 .add-links .wrapper .link-box input {
   width: 60%;
-  color: #808080;
+  color: #818181;
   font-family: Roboto;
   font-size: 16px;
   line-height: 42px;
@@ -1322,7 +1322,7 @@ template {
 .add-links .wrapper .link-box .button.gray svg {
   height: 20px;
   width: 20px;
-  fill: #808080;
+  fill: #818181;
   margin-right: 5px;
 }
 
@@ -1343,11 +1343,6 @@ template {
 .add-links .wrapper .link-box .button:last-child:hover {
   background: #e7700a;
   cursor: pointer;
-}
-
-/* Scrollbar *****************************************/
-.simplebar-scrollbar:before {
-  background-color: pink;
 }
 
 /* Global + reusable **************************************************/
@@ -1445,7 +1440,7 @@ header.top-bar ul li a img {
 }
 
 header.top-bar ul li a #value {
-  color: #9c9c9c;
+  color: #a6a6a6;
   font-family: Roboto;
   font-size: 20px;
   font-weight: 700;
@@ -1489,6 +1484,20 @@ nav.side-bar ul#topbar-to-sidebar {
   border-top: 1px solid #333333;
   padding-top: 15px;
   display: none;
+}
+
+nav.side-bar ul#topbar-to-sidebar li:hover svg {
+  margin-left: 30px;
+}
+
+nav.side-bar ul#topbar-to-sidebar svg {
+  margin-left: 25px;
+  width: 16px;
+  height: 16px;
+}
+
+nav.side-bar ul#topbar-to-sidebar svg:hover {
+  fill: #ffffff;
 }
 
 nav.side-bar ul li {
@@ -1535,7 +1544,7 @@ nav.side-bar ul li a.active {
   padding: 5px 0;
 }
 
-nav.side-bar ul li svg.active {
+nav.side-bar ul li svg.active-2 {
   fill: #ffffff;
   margin-left: 25px;
 }
@@ -1551,13 +1560,12 @@ nav.side-bar ul li:hover a {
   border-left-color: #f58220;
 }
 
-nav.side-bar ul li:hover svg,
-nav.side-bar ul li:hover img {
+nav.side-bar ul li:hover svg {
   margin-left: 25px;
 }
 
 nav.side-bar h2 {
-  color: #808080;
+  color: #818181;
   font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
@@ -1617,6 +1625,7 @@ nav.side-bar .manager span {
 
 /* Section--Main ******************************************************************/
 .main {
+  display: block;
   background: #ffffff;
   box-shadow: 1px 1px 5px #d4d4d4;
   margin-bottom: 35px;
@@ -1761,16 +1770,9 @@ nav.side-bar .manager span {
   margin-bottom: 40px;
 }
 
-.main .chart .chart-img img {
-  display: block;
-  margin: 0 auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 /* Section--Links ******************************************************************/
 .links {
-  display: none;
+  display: block;
   background: #ffffff;
   box-shadow: 1px 1px 5px #d4d4d4;
 }
@@ -1978,7 +1980,7 @@ nav.side-bar .manager span {
 
 .details table tr:hover {
   background: #f1f1f1;
-  border-left: 3px solid #f58320;
+  border-left: 3px solid #f58220;
   cursor: pointer;
 }
 
@@ -1994,7 +1996,7 @@ nav.side-bar .manager span {
 }
 
 .details table tr th:hover {
-  color: #111;
+  color: #111111;
   cursor: pointer;
 }
 
@@ -2160,7 +2162,7 @@ nav.side-bar .manager span {
 
 .payout table tr:hover {
   background: #f1f1f1;
-  border-left: 3px solid #f58320;
+  border-left: 3px solid #f58220;
   cursor: pointer;
 }
 
@@ -2176,7 +2178,7 @@ nav.side-bar .manager span {
 }
 
 .payout table tr th:hover {
-  color: #111;
+  color: #111111;
   cursor: pointer;
 }
 
@@ -2536,7 +2538,7 @@ nav.side-bar .manager span {
 }
 
 .postback .box .box-item h2 {
-  color: #808080;
+  color: #818181;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
@@ -2549,7 +2551,7 @@ nav.side-bar .manager span {
   resize: none;
   width: 98%;
   height: 200px;
-  color: #808080;
+  color: #818181;
   font-family: Roboto;
   padding: 10px;
   outline-color: #f58220;
@@ -2580,7 +2582,7 @@ nav.side-bar .manager span {
 }
 
 .postback .select-inputs .box-item h2 {
-  color: #808080;
+  color: #818181;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;
@@ -2613,7 +2615,7 @@ nav.side-bar .manager span {
 }
 
 .postback .info h2 {
-  color: #808080;
+  color: #818181;
   font-family: Roboto;
   font-size: 16px;
   font-weight: 700;

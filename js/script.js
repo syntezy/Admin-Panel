@@ -12,10 +12,54 @@ $(document).ready(function () {
 
 $('.menu-to-hide li').click(function () {
     $('.menu-to-hide li a').removeClass('active');
-    $('.menu-to-hide li svg').removeClass('active');
+    $('.menu-to-hide li svg').removeClass('active-2');
     $(this).find('a').addClass('active');
-    $(this).find('svg').addClass('active');
+    $(this).find('svg').addClass('active-2');
 })
+
+/* Chart.js */
+
+var myChart = document.querySelector('#myChart').getContext('2d');
+
+Chart.defaults.global.defaultFontFamily = 'Roboto';
+Chart.defaults.global.defaultFontColor = '#666';
+
+var massPopChart = new Chart(myChart, {
+    type: 'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
+    data: {
+        labels: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10'],
+        datasets: [{
+            label: 'Signups',
+            data: [
+                600,
+                500, 
+                400,
+                300,
+                200,
+                100,
+                0
+            ],
+            //backgroundColor: 'blue'
+            backgroundColor: [
+                '#448fac',
+                '#712bbc'
+            ]
+        }]
+    },
+    options: {
+        labels: {
+            fontSize: 30,
+        },
+        layout: {
+            padding: {
+                left: 50,
+                right: 50,
+                top: 10,
+                bottom: 0
+            }
+        }
+    }
+});
 
 /* HTML References */
 
@@ -59,26 +103,32 @@ var closeMsgBox = document.querySelector('#closeMsgBox');
 
 manager.addEventListener('click', function () {
     messageBoxModal.style.display = 'block';
+    messageBoxModal.style.position = 'fixed';
 });
 
 addLinkOne.addEventListener('click', function () {
     addLinksModal.style.display = 'block';
+    addLinksModal.style.position = 'fixed';
 });
 
 addLinkTwo.addEventListener('click', function () {
     addLinksModal.style.display = 'block';
+    addLinksModal.style.position = 'fixed';
 });
 
 addBannerOne.addEventListener('click', function () {
     addBannersModal.style.display = 'block';
+    addBannersModal.style.position = 'fixed';
 });
 
 addBannerTwo.addEventListener('click', function () {
     addBannersModal.style.display = 'block';
+    addBannersModal.style.position = 'fixed';
 });
 
 logoutBtn.addEventListener('click', function () {
     logoutModal.style.display = 'block';
+    logoutModal.style.position = 'fixed';
 });
 
 enterBtn.addEventListener('click', function () {
@@ -88,10 +138,12 @@ enterBtn.addEventListener('click', function () {
 quitBtn.addEventListener('click', function () {
     logoutModal.style.display = 'none';
     loginModal.style.display = 'block';
+    loginModal.style.position = 'fixed';
 });
 
 logoutSideBar.addEventListener('click', function(){
     logoutModal.style.display = 'block';
+    logoutModal.style.position = 'fixed';
 });
 
 cancelBtn.addEventListener('click', function () {
@@ -109,7 +161,6 @@ closeLinks.addEventListener('click', function () {
 closeMsgBox.addEventListener('click', function () {
     messageBoxModal.style.display = 'none';
 });
-
 
 
 generalSection.addEventListener('click', function () {
