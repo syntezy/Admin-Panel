@@ -382,7 +382,7 @@ template {
 .login {
   position: absolute;
   left: 0;
-  top: -1000px;
+  top: -2000px;
   width: 100%;
   height: 100vh;
   background: rgba(41, 41, 41, 0.698);
@@ -477,7 +477,7 @@ template {
 .message-box {
   position: absolute;
   left: 0;
-  top: -1000px;
+  top: -2000px;
   width: 100%;
   height: 100vh;
   background: rgba(41, 41, 41, 0.698);
@@ -643,7 +643,7 @@ template {
 .logout {
   position: absolute;
   left: 0;
-  top: -1000px;
+  top: -2000px;
   width: 100%;
   height: 100vh;
   background: rgba(41, 41, 41, 0.698);
@@ -721,7 +721,7 @@ template {
 .add-banners {
   position: absolute;
   left: 0;
-  top: -1000px;
+  top: -2000px;
   width: 100%;
   height: 100vh;
   background: rgba(41, 41, 41, 0.698);
@@ -1003,7 +1003,7 @@ template {
 .add-links {
   position: absolute;
   left: 0;
-  top: -1000px;
+  top: -2000px;
   width: 100%;
   height: 100vh;
   background: rgba(41, 41, 41, 0.698);

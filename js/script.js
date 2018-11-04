@@ -132,11 +132,11 @@ logoutBtn.addEventListener('click', function () {
 });
 
 enterBtn.addEventListener('click', function () {
-    loginModal.style.top = '-1000px';
+    loginModal.style.top = '-2000px';
 });
 
 quitBtn.addEventListener('click', function () {
-    logoutModal.style.top = '-1000px';
+    logoutModal.style.top = '-2000px';
     loginModal.style.top = '0';
     loginModal.style.position = 'fixed';
 });
@@ -147,19 +147,19 @@ logoutSideBar.addEventListener('click', function(){
 });
 
 cancelBtn.addEventListener('click', function () {
-    logoutModal.style.top = '-1000px';
+    logoutModal.style.top = '-2000px';
 });
 
 closeBanners.addEventListener('click', function () {
-    addBannersModal.style.top = '-1000px';
+    addBannersModal.style.top = '-2000px';
 });
 
 closeLinks.addEventListener('click', function () {
-    addLinksModal.style.top = '-1000px';
+    addLinksModal.style.top = '-2000px';
 });
 
 closeMsgBox.addEventListener('click', function () {
-    messageBoxModal.style.top = '-1000px';
+    messageBoxModal.style.top = '-2000px';
 });
 
 
