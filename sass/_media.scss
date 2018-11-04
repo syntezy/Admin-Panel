@@ -432,7 +432,9 @@
     }
     /* Add banners *****************************************/
     .add-banners {
-        height: 200vh;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
         .wrapper {
             .select-inputs, .select-inputs__second {
                 margin-left: 30px;
@@ -455,7 +457,9 @@
     } 
     /* Add links *****************************************/
     .add-links {
-        height: 150vh;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
         .wrapper {
             .select-inputs {
                 margin-left: 30px;

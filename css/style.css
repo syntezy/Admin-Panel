@@ -3012,7 +3012,9 @@ nav.side-bar .manager span {
   }
   /* Add banners *****************************************/
   .add-banners {
-    height: 200vh;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   .add-banners .wrapper .select-inputs, .add-banners .wrapper .select-inputs__second {
     margin-left: 30px;
@@ -3031,7 +3033,9 @@ nav.side-bar .manager span {
   }
   /* Add links *****************************************/
   .add-links {
-    height: 150vh;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   .add-links .wrapper .select-inputs {
     margin-left: 30px;

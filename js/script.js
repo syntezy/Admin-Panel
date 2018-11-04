@@ -33,12 +33,12 @@ let myChart = new Chart(barChart, {
         datasets: [
             {
                 label: 'Signups',
-                data: [98, 151, 462, 233, 309, 188, 409, 482, 255, 147],
+                data: [106, 151, 462, 233, 309, 188, 409, 482, 255, 147],
                 backgroundColor: '#448fac'
             },
             {
                 label: 'FTD',
-                data: [26, 335, 579, 185, 392, 229, 309, 409, 101, 89],
+                data: [96, 335, 579, 185, 392, 229, 309, 409, 101, 89],
                 backgroundColor: '#f58220'
             },
             {
