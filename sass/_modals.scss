@@ -911,18 +911,8 @@ input[type=range] {
     background: #f58220;
     cursor: pointer;
     -webkit-appearance: none;
-    margin-top: 15px;
+    margin-top: 10px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    position: relative;
-    &::before {
-        content: 'nr';
-        position: absolute;
-        bottom: 50px;
-        left: 50%;
-        font-size: 150px;
-        transform: translateX(-50%);
-        color: red;
-    }
   }
   input[type=range]:focus::-webkit-slider-runnable-track {
     background: #e1e1e1;
@@ -932,7 +922,6 @@ input[type=range] {
     height: 8.4px;
     cursor: pointer;
     background: #d4d4d4;
-    border: 0px solid #010101;
   }
   input[type=range]::-moz-range-thumb {
     height: 36px;

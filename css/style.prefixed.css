@@ -1360,20 +1360,9 @@ input[type=range]::-webkit-slider-thumb {
   background: #f58220;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: 15px;
+  margin-top: 10px;
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
           clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  position: relative;
-}
-
-input[type=range]::-webkit-slider-thumb::before {
-  content: 'nr';
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  font-size: 150px;
-  transform: translateX(-50%);
-  color: red;
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
@@ -1385,7 +1374,6 @@ input[type=range]::-moz-range-track {
   height: 8.4px;
   cursor: pointer;
   background: #d4d4d4;
-  border: 0px solid #010101;
 }
 
 input[type=range]::-moz-range-thumb {
@@ -3373,7 +3361,9 @@ nav.side-bar .manager span {
 @media (max-width: 690px) {
   /* Add banners *****************************************/
   .add-banners {
-    height: 200vh;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
   }
   .add-banners .wrapper .select-inputs, .add-banners .wrapper .select-inputs__second {
     margin-left: 10px;

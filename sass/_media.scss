@@ -481,7 +481,9 @@
 
     /* Add banners *****************************************/
     .add-banners {
-        height: 200vh;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
         .wrapper {
             .select-inputs, .select-inputs__second {
                 margin-left: 10px;
