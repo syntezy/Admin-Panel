@@ -53,7 +53,7 @@ let myChart = new Chart(barChart, {
             display: true,
             labels: {
                 fontSize: 20,
-                padding: 70,
+                padding: 10,
                 boxWidth: 20
             }
         }
